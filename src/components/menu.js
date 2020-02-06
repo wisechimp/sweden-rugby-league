@@ -10,23 +10,17 @@ export default (props) => (
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav>
         <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/news/">News</Nav.Link>
-        <Nav.Link href="/membership/">Join Us</Nav.Link>
-        <NavDropdown title="Team" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/calendar/">Calendar</NavDropdown.Item>
-          <NavDropdown.Item href="/squad/">Squad</NavDropdown.Item>
-          <NavDropdown.Item href="/training/">Training</NavDropdown.Item>
-          <NavDropdown.Item href="/results/">Results</NavDropdown.Item>
-        </NavDropdown>
+        <Nav.Link href="/latest-news/">News</Nav.Link>
+        <Nav.Link href="/results/">Results</Nav.Link>
+        <Nav.Link href="/clubs/">Clubs</Nav.Link>
         <NavDropdown title="About" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/about/">Skane Stags</NavDropdown.Item>
-          <NavDropdown.Item href="/rugbyleague/">Rugby League</NavDropdown.Item>
-          <NavDropdown.Item href="/partners/">Partners</NavDropdown.Item>
           <NavDropdown.Item href="/contact/">Contact</NavDropdown.Item>
+          <NavDropdown.Item href="/what-is-rugby-league/">Rugby League</NavDropdown.Item>
+          <NavDropdown.Item href="/partners/">Partners</NavDropdown.Item>
+          <NavDropdown.Item href="/merchandise/">Kit</NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link href="/merchandise/">Kit</Nav.Link>
       </Nav>
+      <SocialMediaLinks />
     </Navbar.Collapse>
-    <SocialMediaLinks />
   </Navbar>
 )

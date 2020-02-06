@@ -1,6 +1,7 @@
 h1 {
   font-size: 2em;
   margin: 0.5em;
+  width: auto;
 }
 img.poster {
   display: block;
@@ -8,9 +9,11 @@ img.poster {
   max-width: 100%;
   padding-bottom: 1em;
 }
+p {
+  margin-block-end: unset;
+}
 .bodyContent {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0 1em;
 }
 .carousel-control-next {
   margin-bottom: 2.5em;
@@ -69,6 +72,12 @@ img.poster {
 	}
   .brandname {
     min-height: max-content;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
   }
 }
 /*Reordering the components on the contacts page */
