@@ -1,11 +1,12 @@
 import React from 'react'
 
+import Layout from '../components/layout'
 import merchandiseStyles from './merchandise.module.css'
 
 export default () => (
-    <div>
+    <Layout pageTitle="Merchandise">
         Link to shirt.
         Hats?
         Link to Stags shop.
-    </div>
+    </Layout>
 )

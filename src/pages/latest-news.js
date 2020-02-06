@@ -1,9 +1,10 @@
 import React from 'react'
 
+import Layout from '../components/layout'
 import latestNewsStyles from './latest-news.module.css'
 
 export default () => (
-    <div>
+    <Layout pageTitle="Latest News">
         Latest news, what's hot and what's not in Swedish Rugby League.
-    </div>
+    </Layout>
 )

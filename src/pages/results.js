@@ -1,9 +1,10 @@
 import React from 'react'
 
+import Layout from '../components/layout'
 import resultsStyles from './results.module.css'
 
 export default () => (
-    <div>
+    <Layout pageTitle="Results">
         What's the scorey morning glory?
-    </div>
+    </Layout>
 )
