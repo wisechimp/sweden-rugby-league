@@ -3,10 +3,18 @@ img.flagIcon {
   width: 30px;
 }
 .socialGroup {
-  align: right;
   padding: 0.5em;
+  position: absolute;
+  right: 1em;
 }
 .socialGroup a {
   color: white;
   padding-right: 1em;
+}
+
+@media screen and (max-width: 575px) {
+  .socialGroup {
+    position: unset;
+    right: 0;
+  }
 }
