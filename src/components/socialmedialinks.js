@@ -4,29 +4,29 @@ import { FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube } from "react-icons
 //import swedenFlag from "../images/sv-flag.png"
 import styles from "./socialmedialinks.module.css"
 
-export default() => (
+export default () => (
   <div className={styles.socialGroup}>
     <a
-      href="https://www.facebook.com/skanestags/"
-      aria-label="Facebook icon link to Skane Stag's Facebook page"
+      href="https://www.facebook.com/swedenrugbyleague/"
+      aria-label="Facebook icon link to Sweden Rugby League's Facebook page"
     >
       <FaFacebookSquare />
     </a>
     <a
-      href="https://www.instagram.com/skanestags"
-      aria-label="Instagram icon link to Skane Stag's Instagram page"
+      href="https://www.instagram.com/sweden_rugby_league"
+      aria-label="Instagram icon link to Sweden Rugby League's Instagram page"
     >
-     <FaInstagram />
+      <FaInstagram />
     </a>
     <a
-      href="https://twitter.com/skanecrusaders"
-      aria-label="Twitter icon link to Skane Stag's Twitter page"
+      href="https://twitter.com/swedenrugby"
+      aria-label="Twitter icon link to Sweden Rugby League's Twitter page"
     >
       <FaTwitter />
     </a>
     <a
-      href="https://www.youtube.com/channel/UClPPKnRY10Yp0YxlCnULkkQ"
-      aria-label="Youtube icon link to Skane Stag's Youtube page"
+      href="https://www.youtube.com/channel/UCFgK9OchuqAxrBLrvcs4MKg"
+      aria-label="Youtube icon link to Sweden Rugby League's Youtube page"
     >
       <FaYoutube />
     </a>
