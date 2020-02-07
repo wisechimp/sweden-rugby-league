@@ -17,4 +17,8 @@ img.flagIcon {
     position: unset;
     right: 0;
   }
+
+  .socialGroup a {
+    padding-right: 2em;
+  }
 }
