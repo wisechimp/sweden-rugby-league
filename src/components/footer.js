@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
 
 import AgnesbergSmall from '../images/sponsoragnesbergssmall.png'
 import Flyttdax from '../images/sponsorflyttdax.png'
@@ -10,7 +10,7 @@ import footerStyles from "./footer.module.css"
 
 export default () => (
   <div>
-    <p className={footerStyles.footer}>We're grateful to our <Link to='/partners'>partners</Link> for their support:</p>
+    <p className={footerStyles.footer}>We're grateful to our partners for their support:</p>
     <div className={footerStyles.footerLogos}>
       <a href="http://www.agkungalv.se/" target="_blank" rel="noopener noreferrer">
         <img className={footerStyles.footerLogoBox} src={AgnesbergSmall} alt="Agnesberg's logo" />

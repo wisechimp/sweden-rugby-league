@@ -16,7 +16,6 @@ export default (props) => (
         <NavDropdown title="About" id="basic-nav-dropdown">
           <NavDropdown.Item href="/contact/">Contact</NavDropdown.Item>
           <NavDropdown.Item href="/what-is-rugby-league/">Rugby League</NavDropdown.Item>
-          <NavDropdown.Item href="/partners/">Partners</NavDropdown.Item>
           <NavDropdown.Item href="/merchandise/">Kit</NavDropdown.Item>
         </NavDropdown>
       </Nav>
