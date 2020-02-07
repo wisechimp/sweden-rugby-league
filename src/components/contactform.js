@@ -4,6 +4,6 @@ import contactformStyles from './contactform.module.css'
 
 export default () => (
     <div>
-        A contact form.
+        A contact form will appear here some day.
     </div>
 )

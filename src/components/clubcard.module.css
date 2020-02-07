@@ -1,0 +1,15 @@
+.cardStructure {
+    margin: 1em;
+    max-width: 350px;
+}
+
+.cardStructure a {
+    align-content: flex-end;
+    background-color: #343a40;
+    border-radius: 0.5em;
+    color: rgba(255,255,255,.5);
+    float: right;
+    margin-right: 1em;
+    padding: 0.5em;
+    text-decoration: none;
+}

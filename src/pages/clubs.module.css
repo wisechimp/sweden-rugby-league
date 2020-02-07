@@ -1,0 +1,6 @@
+.clubsContainer {
+    align-items: top;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}

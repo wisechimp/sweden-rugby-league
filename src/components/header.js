@@ -12,7 +12,7 @@ export default () => (
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Sweden Rugby League" />
     <meta property="og:description" content="Sweden Rugby League are the body responsible for rugby league in Sweden." />
-    <meta property="og:image" content="https://swedenrugbyleague.com/srllogo.png" />
+    <meta property="og:image" content="https://swedenrugbyleague.com/images/srllogo.png" />
     <meta property="og:url" content="https://swedenrugbyleague.com/index.htm" />
     <meta property="og:site_name" content="Sweden Rugby League" />
     <meta name="twitter:card" content="summary_large_image" />
