@@ -11,6 +11,22 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "12th October 2019",
       "venue": "Stadion KS Budowlani, Łódź",
-      "matchReportExists": false
+      "matchReportExists": false,
+      "matchReportLink": ""
+    },
+    {
+      "id": 201801,
+      "homeTeamLogo": "images/srllogo.png",
+      "homeTeamLogoAlt": "Sweden Rugby League's Logo",
+      "homeTeam": "Sweden",
+      "homeScore": "4",
+      "awayTeam": "Netherlands",
+      "awayScore": "24",
+      "awayTeamLogo": "images/hollandlogo.jpg",
+      "awayTeamLogoAlt": "The Netherland's Rugby League's Logo",
+      "date": "22nd September 2018",
+      "venue": "Gothenburg Rugby Club, Gothenburg",
+      "matchReportExists": true,
+      "matchReportLink": "https://www.rlef.eu.com/fixtures/876"
     }
 ]

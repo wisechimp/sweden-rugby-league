@@ -4,13 +4,13 @@ import Img from 'gatsby-image'
 import resultsCardStyles from "./resultscard.module.css"
 
 export default props => (
-  <div>
+  <>
     <div className={resultsCardStyles.resultContainer}>
-      <div className={resultsCardStyles.teamContainer}>
+      <div className={resultsCardStyles.homeTeamContainer}>
         <div className={resultsCardStyles.teamLogo}>
           <Img fixed={props.homeTeamLogo} alt={props.homeTeamLogoAlt} />
         </div>
-        <div className={resultsCardStyles.homeTeam}>
+        <div className={resultsCardStyles.team}>
           <p>{props.homeTeam}</p>
         </div>
       </div>
@@ -19,8 +19,8 @@ export default props => (
           {props.homeScore} <b>v</b> {props.awayScore}
         </p>
       </div>
-      <div className={resultsCardStyles.teamContainer}>
-        <div className={resultsCardStyles.awayTeam}>
+      <div className={resultsCardStyles.awayTeamContainer}>
+        <div className={resultsCardStyles.team}>
           <p>{props.awayTeam}</p>
         </div>
         <div className={resultsCardStyles.teamLogo}>
@@ -33,5 +33,10 @@ export default props => (
         {props.date}, {props.venue}
       </p>
     </div>
-  </div>
+    {props.matchReportExists && (
+      <div className={resultsCardStyles.linkButt}>
+        <a href={props.matchReportLink} target="_blank" rel="noopener noreferrer">Match Report</a>
+      </div>
+    )}
+  </>
 )

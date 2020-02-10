@@ -1,16 +1,29 @@
 p {
   margin-bottom: 0;
 }
-.awayTeam {
-  font-weight: bold;
-  
-  margin: auto;
-  text-align: right;
+.awayTeamContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
 }
-.homeTeam {
-  font-weight: bold;
-  margin: auto;
-  text-align: left;
+.homeTeamContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+.linkButt {
+  height: 2em;
+}
+.linkButt a{
+  background-color: #343a40;
+  border-radius: 0.5em;
+  color: rgba(255,255,255,.5);
+  font-size: 0.8em;
+  float: right;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  padding: 0.25em;
+  text-decoration: none;
 }
 .matchDetails{
   font-size: 0.8em;
@@ -20,16 +33,17 @@ p {
 .resultContainer {
   align-content: center;
   display: flex;
-  justify-content: space-between;
   padding: 0.5em;
 }
 .score {
-  margin: auto;
+  display: block;
+  margin: auto 0;
   text-align: center;
+  width: 20%;
 }
-.teamContainer {
-  display: flex;
-  justify-content: center;
+.team {
+  font-weight: bold;
+  margin: auto 0;
 }
 .teamLogo {
   height: 60px;
