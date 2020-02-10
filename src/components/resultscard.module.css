@@ -2,14 +2,15 @@ p {
   margin-bottom: 0;
 }
 .awayTeam {
-  text-align: right;
   font-weight: bold;
-  width: 40%;
+  
+  margin: auto;
+  text-align: right;
 }
 .homeTeam {
-  text-align: left;
   font-weight: bold;
-  width: 40%;
+  margin: auto;
+  text-align: left;
 }
 .matchDetails{
   font-size: 0.8em;
@@ -17,10 +18,20 @@ p {
   text-align: center;
 }
 .resultContainer {
+  align-content: center;
   display: flex;
+  justify-content: space-between;
   padding: 0.5em;
 }
 .score {
+  margin: auto;
   text-align: center;
-  width: 20%;
+}
+.teamContainer {
+  display: flex;
+  justify-content: center;
+}
+.teamLogo {
+  height: 60px;
+  width: 60px;
 }

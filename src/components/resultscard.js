@@ -1,22 +1,37 @@
 import React from "react"
+import Img from 'gatsby-image'
 
-import styles from "./resultscard.module.css"
+import resultsCardStyles from "./resultscard.module.css"
 
-export default(props) => (
+export default props => (
   <div>
-    <div className={styles.resultContainer}>
-      <div className={styles.homeTeam}>
-        <p>{props.homeTeam}</p>
+    <div className={resultsCardStyles.resultContainer}>
+      <div className={resultsCardStyles.teamContainer}>
+        <div className={resultsCardStyles.teamLogo}>
+          <Img fixed={props.homeTeamLogo} alt={props.homeTeamLogoAlt} />
+        </div>
+        <div className={resultsCardStyles.homeTeam}>
+          <p>{props.homeTeam}</p>
+        </div>
       </div>
-      <div className={styles.score}>
-        <p>{props.homeScore} <b>v</b> {props.awayScore}</p>
+      <div className={resultsCardStyles.score}>
+        <p>
+          {props.homeScore} <b>v</b> {props.awayScore}
+        </p>
       </div>
-      <div className={styles.awayTeam}>
-        <p>{props.awayTeam}</p>
+      <div className={resultsCardStyles.teamContainer}>
+        <div className={resultsCardStyles.awayTeam}>
+          <p>{props.awayTeam}</p>
+        </div>
+        <div className={resultsCardStyles.teamLogo}>
+          <Img fixed={props.awayTeamLogo} alt={props.awayTeamLogoAlt} />
+        </div>
       </div>
     </div>
-    <div className={styles.matchDetails}>
-      <p>{props.date}, {props.venue}</p>
+    <div className={resultsCardStyles.matchDetails}>
+      <p>
+        {props.date}, {props.venue}
+      </p>
     </div>
   </div>
 )

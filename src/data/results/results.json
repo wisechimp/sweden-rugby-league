@@ -1,0 +1,16 @@
+[
+    {
+      "id": 201901,
+      "homeTeamLogo": "images/polandlogo.png",
+      "homeTeamLogoAlt": "Poland Rugby League's Logo",
+      "homeTeam": "Poland",
+      "homeScore": "16",
+      "awayTeam": "Sweden",
+      "awayScore": "50",
+      "awayTeamLogo": "images/srllogo.png",
+      "awayTeamLogoAlt": "Sweden Rugby League's Logo",
+      "date": "12th October 2019",
+      "venue": "Stadion KS Budowlani, Łódź",
+      "matchReportExists": false
+    }
+]
