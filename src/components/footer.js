@@ -13,7 +13,7 @@ export default () => (
     <p className={footerStyles.footer}>We're grateful to our partners for their support:</p>
     <div className={footerStyles.footerLogos}>
       <a href="http://www.agkungalv.se/" target="_blank" rel="noopener noreferrer">
-        <img className={footerStyles.footerLogoBox} src={AgnesbergSmall} alt="Agnesberg's logo" />
+        <img src={AgnesbergSmall} alt="Agnesberg's logo" />
       </a>
       <a href="http://www.flyttdax.se/" target="_blank" rel="noopener noreferrer">
         <img src={Flyttdax} alt="Flyttdax's logo" />
