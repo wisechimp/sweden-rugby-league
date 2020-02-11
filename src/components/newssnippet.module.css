@@ -3,6 +3,7 @@ p.newsSnippet{
 }
 .imageReducedSize {
   padding-left: 0.5em;
+  height: 150px;
   width: 150px;
 }
 .readMore {
