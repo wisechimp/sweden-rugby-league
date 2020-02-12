@@ -14,23 +14,17 @@ export default ({ data }) => (
       alt="The Sweden Rugby League team shirt."
     />
     <p className={merchandiseStyles.shopText}>
-      The national team's current kit is supplied by the
-      <OutboundLink
+      The national team's current kit is supplied by the <OutboundLink
         href="https://1908.store/pages/about-us"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        Baskerville project
-      </OutboundLink>
+      >Baskerville project</OutboundLink>
       . If you are interested in getting your own to show you support for Sweden
-      rugby league then please visit them
-      <OutboundLink
+      rugby league then please visit them <OutboundLink
         href="https://1908.store/collections/frontpage/products/sweden-national-jersey"
         target="_blank"
         rel="noopener noreferrer"
-      >
-        here
-      </OutboundLink>
+      >here</OutboundLink>
       .
     </p>
   </Layout>

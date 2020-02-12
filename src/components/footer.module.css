@@ -16,3 +16,10 @@
 .footerLogos img {
 	margin: 1em;
 }
+
+.sponsorUs {
+	display: block;
+	margin: auto;
+	padding-bottom: 1em;
+	width: 40%;
+}

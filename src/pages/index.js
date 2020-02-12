@@ -80,12 +80,5 @@ export const carouselQuery = graphql`
 				}
 			}
 		}
-		 agnesberg: file(relativePath: { eq: "sponsoragnesbergssmall.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 200, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
   }
 `
