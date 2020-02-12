@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Layout from '../components/layout'
 import merchandiseStyles from './merchandise.module.css'
@@ -8,22 +9,29 @@ import merchandiseStyles from './merchandise.module.css'
 export default ({ data }) => (
   <Layout pageTitle="Merchandise">
     <Img
-			className={merchandiseStyles.shirtImage}
+      className={merchandiseStyles.shirtImage}
       fluid={data.file.childImageSharp.fluid}
       alt="The Sweden Rugby League team shirt."
     />
     <p className={merchandiseStyles.shopText}>
-      The national team's current kit is supplied by the <a
+      The national team's current kit is supplied by the
+      <OutboundLink
         href="https://1908.store/pages/about-us"
         target="_blank"
         rel="noopener noreferrer"
-      >Baskerville project</a>
+      >
+        Baskerville project
+      </OutboundLink>
       . If you are interested in getting your own to show you support for Sweden
-      rugby league then please visit them <a
+      rugby league then please visit them
+      <OutboundLink
         href="https://1908.store/collections/frontpage/products/sweden-national-jersey"
         target="_blank"
         rel="noopener noreferrer"
-      >here</a>.
+      >
+        here
+      </OutboundLink>
+      .
     </p>
   </Layout>
 )

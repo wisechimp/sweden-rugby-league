@@ -1,5 +1,6 @@
 import React from "react"
 import Img from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import resultsCardStyles from "./resultscard.module.css"
 
@@ -35,7 +36,7 @@ export default props => (
     </div>
     {props.matchReportExists && (
       <div className={resultsCardStyles.linkButt}>
-        <a href={props.matchReportLink} target="_blank" rel="noopener noreferrer">Match Report</a>
+        <OutboundLink href={props.matchReportLink} target="_blank" rel="noopener noreferrer">Match Report</OutboundLink>
       </div>
     )}
   </>

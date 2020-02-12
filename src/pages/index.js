@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import Layout from '../components/layout'
 import HomeTitle from '../components/hometitle'
@@ -33,22 +34,22 @@ export default ({ data }) => {
             Sweden Rugby League were founded in 2009 with the aim to organise
             the sport of <Link to="/what-is-rugby-league">rugby league</Link> in
             Sweden. They were admitted to the{" "}
-            <a
+            <OutboundLink
               href="https://www.rlef.eu.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               Rugby League European Federation
-            </a>{" "}
+            </OutboundLink>{" "}
             in 2011 as Observer members. They oversee the national competition
             in Sweden and the national team who were{" "}
-            <a
+            <OutboundLink
               href="http://www.rlif.com/article/8789/kiwis-take-no--spot-in-latest-international-rugby-league-world-rankings"
               target="_blank"
               rel="noopener noreferrer"
             >
               ranked 30th
-            </a>{" "}
+            </OutboundLink>{" "}
             in the world at the start of 2020.
           </p>
         </div>

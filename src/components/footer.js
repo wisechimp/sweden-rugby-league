@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import AgnesbergSmall from '../images/sponsoragnesbergssmall.png'
 import Flyttdax from '../images/sponsorflyttdax.png'
@@ -12,15 +12,15 @@ export default () => (
   <div>
     <p className={footerStyles.footer}>We're grateful to our partners for their support:</p>
     <div className={footerStyles.footerLogos}>
-      <a href="http://www.agkungalv.se/" target="_blank" rel="noopener noreferrer">
+      <OutboundLink href="http://www.agkungalv.se/" target="_blank" rel="noopener noreferrer">
         <img src={AgnesbergSmall} alt="Agnesberg's logo" />
-      </a>
-      <a href="http://www.flyttdax.se/" target="_blank" rel="noopener noreferrer">
+      </OutboundLink>
+      <OutboundLink href="http://www.flyttdax.se/" target="_blank" rel="noopener noreferrer">
         <img src={Flyttdax} alt="Flyttdax's logo" />
-      </a>
-      <a href="https://fysiken.nu/sv/" target="_blank" rel="noopener noreferrer">
+      </OutboundLink>
+      <OutboundLink href="https://fysiken.nu/sv/" target="_blank" rel="noopener noreferrer">
         <img src={Fysiken} alt="Fysiken's logo" />
-      </a>
+      </OutboundLink>
       <img src={McGlincheys} alt="McGlinchey's logo" />
     </div>
   </div>

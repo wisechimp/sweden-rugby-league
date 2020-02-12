@@ -1,4 +1,5 @@
 import React from  "react"
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import messyLogo from "../images/messengerlogo.svg"
 import styles from "./connectmessenger.module.css"
@@ -11,12 +12,12 @@ export default () => (
       alt="Facebook's Messenger logo"
     />
     <p>
-      <a
+      <OutboundLink
         className={styles.messageButt}
         href="https://m.me/swedenrugbyleague"
       >
           Connect with us on Messenger
-      </a>
+      </OutboundLink>
     </p>
   </div>
 )

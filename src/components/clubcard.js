@@ -1,6 +1,5 @@
 import React from 'react'
-//import Link from 'gatsby'
-//import Img from 'gatsby-image'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import clubcardStyles from './clubcard.module.css'
 
@@ -12,6 +11,12 @@ export default (props) => (
             alt={props.imgAlt}
         />
         <p>{props.description}</p>
-        <a href={props.clubLink} target="_blank" rel="noopener noreferrer">Learn More...</a>
+        <OutboundLink 
+            href={props.clubLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
+        >
+            Learn More...
+        </OutboundLink>
     </div>
 )

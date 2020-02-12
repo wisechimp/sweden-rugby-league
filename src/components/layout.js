@@ -7,9 +7,8 @@ import Footer from "./footer"
 export default (props) => (
   <div>
     <Header />
-    <Menu
-      pageTitle={props.pageTitle}/>
-    {props.children}
+    <Menu pageTitle={props.pageTitle}/>
+      {props.children}
     <Footer />
   </div>
 )
