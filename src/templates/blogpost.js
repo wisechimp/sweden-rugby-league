@@ -28,7 +28,7 @@ export const query = graphql`
       title
       content
       excerpt
-      date(formatString: "MMMM DD, YYYY")
+      date(formatString: "Do MMMM, YYYY")
     }
   }
 `
