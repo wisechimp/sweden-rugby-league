@@ -13,6 +13,13 @@ export default ({ data }) => (
       fluid={data.file.childImageSharp.fluid}
       alt="The Sweden Rugby League team shirt."
     />
+    <div className={`${merchandiseStyles.bigBuyButt} linkButt`}>
+      <OutboundLink
+          href="https://1908.store/collections/frontpage/products/sweden-national-jersey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Buy Now!</OutboundLink>
+    </div>
     <p className={merchandiseStyles.shopText}>
       The national team's current kit is supplied by the <OutboundLink
         href="https://1908.store/pages/about-us"
