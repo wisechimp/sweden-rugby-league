@@ -5,12 +5,19 @@ import styles from "./newssnippet.module.css"
 
 export default props => (
   <div className={styles.snippet}>
-    <h3>{props.headline}</h3>
-    <div className={styles.snippetContent}>
-      <p className={styles.newsSnippet}>{props.snippet}</p>
-      <img className={styles.imageReducedSize} src={props.imgSrc} alt=""/>
+    <div className={styles.headline}>
+      <p>{props.headline}</p>
     </div>
-    <div className={styles.readMore}>
+    <div className={styles.newsDate}>
+      <p>{props.date}</p>
+    </div>
+    <div>
+      <img className={styles.newsImage} src={props.imgSrc} alt=""/>
+    </div>
+    <div className={styles.newsSnippet}>
+      <p>{props.snippet}</p>
+    </div>
+    <div className="linkButt">
       <Link to={`/news/${props.slug}`}>Read more...</Link>
     </div>
   </div>

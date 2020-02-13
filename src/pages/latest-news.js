@@ -4,7 +4,7 @@ import Parser from 'html-react-parser'
 
 import Layout from '../components/layout'
 import NewsSnippet from '../components/newssnippet'
-import latestNewsStyles from './latest-news.module.css'
+//import latestNewsStyles from './latest-news.module.css'
 
 export default ({ data }) => {
 
@@ -19,6 +19,7 @@ export default ({ data }) => {
 						<NewsSnippet
 							key={node.id}
 							headline={Parser(node.title)}
+							date={node.date}
 							snippet={Parser(node.excerpt)}
 							slug={node.slug}
 							imgSrc={node.jetpack_featured_media_url}
@@ -34,8 +35,9 @@ export const newsQuery = graphql`
     allWordpressPost {
     	edges {
       	node {
-					id
-        	content
+			id
+			content
+			date(formatString: "Do MMMM, YYYY")
         	slug
         	excerpt
         	title
