@@ -11,6 +11,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "12th October 2019",
       "venue": "Stadion KS Budowlani, Łódź",
+      "videoExists": true,
+      "videoLink": "https://www.youtube.com/watch?v=gCNYEHkcWyk",
       "matchReportExists": false,
       "matchReportLink": ""
     },
@@ -26,6 +28,8 @@
       "awayTeamLogoAlt": "The Netherland's Rugby League's Logo",
       "date": "22nd September 2018",
       "venue": "Gothenburg Rugby Club, Gothenburg",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/876"
     },
@@ -41,6 +45,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "9th September 2017",
       "venue": "AAC Rugby, Amsterdam",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/820"
     },
@@ -56,6 +62,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "7th August 2017",
       "venue": "Bislett Stadion, Oslo",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/775"
     },
@@ -71,6 +79,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "7th August 2016",
       "venue": "Copenhagen",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/732"
     },
@@ -86,6 +96,8 @@
       "awayTeamLogoAlt": "Norway Rugby League's Logo",
       "date": "16th July 2016",
       "venue": "Stockholm",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/726"
     },
@@ -101,6 +113,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "17th October 2015",
       "venue": "Bislett Stadion, Oslo",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/671"
     },
@@ -116,6 +130,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "25th July 2015",
       "venue": "Tis",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/647"
     },
@@ -131,6 +147,8 @@
       "awayTeamLogoAlt": "Denmark Rugby League's Logo",
       "date": "24th May 2015",
       "venue": "Centrala Idrottsplatsen, Lund",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/644"
     },
@@ -146,6 +164,8 @@
       "awayTeamLogoAlt": "Norway Rugby League's Logo",
       "date": "30th August 2014",
       "venue": "Stockholm",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/589"
     },
@@ -161,6 +181,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "16th August 2014",
       "venue": "Copenhagen",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/581"
     },
@@ -176,6 +198,8 @@
       "awayTeamLogoAlt": "Denmark Rugby League's Logo",
       "date": "17th August 2013",
       "venue": "Kävlinge",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/213"
     },
@@ -191,6 +215,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "24th July 2013",
       "venue": "Oslo",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/510"
     },
@@ -206,6 +232,8 @@
       "awayTeamLogoAlt": "Norway Rugby League's Logo",
       "date": "28th July 2012",
       "venue": "Stockholm",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/395"
     },
@@ -221,6 +249,8 @@
       "awayTeamLogoAlt": "Sweden Rugby League's Logo",
       "date": "28th April 2012",
       "venue": "Gladsaxe Stadion, Copenhagen",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/354"
     },
@@ -236,6 +266,8 @@
       "awayTeamLogoAlt": "Denmark Rugby League's Logo",
       "date": "2nd July 2011",
       "venue": "Gothenburg Rugby Club, Gothenburg",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/213"
     },
@@ -251,6 +283,8 @@
       "awayTeamLogoAlt": "Norway Rugby League's Logo",
       "date": "30th October 2010",
       "venue": "Gothenburg Rugby Club, Gothenburg",
+      "videoExists": false,
+      "videoLink": "",
       "matchReportExists": true,
       "matchReportLink": "https://www.rlef.eu.com/fixtures/103"
     }

@@ -34,6 +34,11 @@ export default props => (
         {props.date}, {props.venue}
       </p>
     </div>
+    {props.videoExists && (
+      <div className={resultsCardStyles.linkButt}>
+      <OutboundLink href={props.videoLink} target="_blank" rel="noopener noreferrer">Video</OutboundLink>
+    </div>
+    )}
     {props.matchReportExists && (
       <div className={resultsCardStyles.linkButt}>
         <OutboundLink href={props.matchReportLink} target="_blank" rel="noopener noreferrer">Match Report</OutboundLink>

@@ -23,9 +23,11 @@ export default ({ data }) => (
             awayTeamLogo={node.awayTeamLogo.childImageSharp.fixed}
             awayTeamLogoAlt={node.awayTeamLogoAlt}
             date={node.date}
-						venue={node.venue}
-						matchReportExists={node.matchReportExists}
-						matchReportLink={node.matchReportLink}
+			venue={node.venue}
+			videoExists={node.videoExists}
+			videoLink={node.videoLink}
+			matchReportExists={node.matchReportExists}
+			matchReportLink={node.matchReportLink}
           />
         )
 			})}
@@ -60,10 +62,12 @@ query {
           	}
          	}
        	}
-				 awayTeamLogoAlt
-				 matchReportExists
-				 matchReportLink
-			}
+		awayTeamLogoAlt
+		videoExists
+		videoLink
+		matchReportExists
+		matchReportLink
 		}
+	}
 	}
 }`
