@@ -15,9 +15,9 @@ p {
   height: 2em;
 }
 .linkButt a{
-  background-color: #343a40;
+  background-color: darkblue;
   border-radius: 0.5em;
-  color: rgba(255,255,255,.5);
+  color: white;
   font-size: 0.8em;
   float: right;
   margin-bottom: 0.5em;
