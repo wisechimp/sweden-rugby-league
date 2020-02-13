@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import ResultsCard from '../components/resultscard'
-import resultsStyles from './results.module.css'
+//import resultsStyles from './results.module.css'
 
 export default ({ data }) => (
 

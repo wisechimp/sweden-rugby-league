@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import ConnectMessenger from "../components/connectmessenger"
 import ContactForm from "../components/contactform"
-import contactStyles from './contact.module.css'
+//import contactStyles from './contact.module.css'
 
 export default () => (
   <Layout pageTitle="Contact Us">
