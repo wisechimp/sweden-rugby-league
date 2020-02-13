@@ -11,12 +11,14 @@ export default (props) => (
             alt={props.imgAlt}
         />
         <p>{props.description}</p>
-        <OutboundLink 
-            href={props.clubLink} 
-            target="_blank" 
-            rel="noopener noreferrer"
-        >
-            Learn More...
-        </OutboundLink>
+        <div className="linkButt">
+            <OutboundLink
+                href={props.clubLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                Learn More...
+            </OutboundLink>
+        </div>
     </div>
 )
