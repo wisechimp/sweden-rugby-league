@@ -3,8 +3,8 @@
     text-align: center;
 }
 .bigBuyButt a {
+    float: unset;
     padding: 0.5em 2em;
-    text-align: center;
 }
 .shirtImage {
     max-width: 450px;
