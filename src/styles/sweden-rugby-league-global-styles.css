@@ -51,6 +51,9 @@ p {
   display: inline-block;
   text-align: center;
 }
+.hidden {
+    display: none;
+}
 .linkButt {
   height: 2.5em;
 }

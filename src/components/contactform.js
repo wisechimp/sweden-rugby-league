@@ -49,82 +49,78 @@ export default () => {
 	}
 
   return (
-		<div className={contactformStyles.contactForm}>
-			<form
-				className={contactformStyles.contactForm}
-				name="contact" 
-				method="post" 
-				action="/thanks/" 
-				data-netlify="true" 
-				data-netlify-honeypot="bot-field"
-				onSubmit={handleSubmit}
-			>
-				<noscript>
-					<p>This form won’t work with Javascript disabled</p>
-				</noscript>
-				<fieldset>
-					<div className={contactformStyles.formFields}>
-						<p class="hidden">
-							<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-						</p>
-						<input type="hidden" name="form-name" value="contact" />
-						<p className={contactformStyles.formRow}>
-							<label
-								className={contactformStyles.fornLabel} 
-								htmlFor="contactName">
-								Name:
-								<input
-									type="text"
-									id="contactName"
-									name="contactName"
-									placeholder="Your name"
-									required="required"
-									onChange={handleChange}
-								/>
-							</label>
-						</p>
-						<p className={contactformStyles.formRow}>
-							<label
-								className={contactformStyles.fornLabel} 
-								htmlFor="email"
-							>
-								email:
-								<input
-									type="text"
-									id="email"
-									name="email"
-									placeholder="username@email.com"
-									required="required"
-									onChange={handleChange}
-								/>
-							</label>
-						</p>
-						<p className={contactformStyles.formRow}>
-							<label
-								className={contactformStyles.fornLabel} 
-								htmlFor="message"
-							>
-								Message:
-								<textarea
-									id="message"
-									name="message"
-									placeholder="Your message"
-									required="required"
-									rows="5"
-									onChange={handleChange}
-								/>
-							</label>
-						</p>
-						<Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
-						<button
-							className={contactformStyles.formButton} 
-							type="submit"
-						>
-							Send
-						</button>
-					</div>
-				</fieldset>
-			</form>
-		</div>
+    <div className={contactformStyles.contactForm}>
+      <form
+        name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
+        <noscript>
+          <p>This form won’t work with Javascript disabled</p>
+        </noscript>
+        <fieldset>
+          <div className={contactformStyles.formFields}>
+            <p class="hidden">
+              <label>
+                Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+            </p>
+            <input type="hidden" name="form-name" value="contact" />
+            <p className={contactformStyles.formRow}>
+              <label
+                className={contactformStyles.formLabel}
+                htmlFor="contactName"
+              >
+                Name:
+              </label>
+              <input
+                className={contactformStyles.formInput}
+                type="text"
+                id="contactName"
+                name="contactName"
+                placeholder="Your name"
+                required="required"
+                onChange={handleChange}
+              />
+            </p>
+            <p className={contactformStyles.formRow}>
+              <label className={contactformStyles.formLabel} htmlFor="email">
+                Email:
+              </label>
+              <input
+                className={contactformStyles.formInput}
+                type="text"
+                id="email"
+                name="email"
+                placeholder="username@email.com"
+                required="required"
+                onChange={handleChange}
+              />
+            </p>
+            <p className={contactformStyles.formRow}>
+              <label className={contactformStyles.formLabel} htmlFor="message">
+                Message:
+              </label>
+              <textarea
+                className={contactformStyles.formInput}
+                id="message"
+                name="message"
+                placeholder="Your message"
+                required="required"
+                rows="5"
+                onChange={handleChange}
+              />
+            </p>
+            <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
+            <button className={contactformStyles.formButton} type="submit">
+              Send Message
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   )
 }
