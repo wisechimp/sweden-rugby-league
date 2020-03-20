@@ -59,7 +59,9 @@ module.exports = {
       options: {
         cloudName: process.env.CLOUDINARY_CLOUD_NAME,
         apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        maxResults: 500,
+        prefix: `sweden-rugby-league/`
       },
     },
     {
