@@ -1,0 +1,16 @@
+h3 {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.mediaContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 576px) {
+  .mediaContainer {
+    justify-content: flex-start;
+    margin-left: 1em;
+  }
+}
