@@ -9,7 +9,7 @@
 .newsImage {
   display: block;
   margin: auto;
-  max-height: 200px;
+  max-width: 100%;
 }
 .newsSnippet{
   padding: 0.5em 0;
