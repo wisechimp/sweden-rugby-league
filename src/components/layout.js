@@ -1,7 +1,7 @@
 import React from "react"
 
 import Header from "./header"
-import Menu from "./menu"
+import Menu from "./menu/menu"
 import Footer from "./footer"
 
 export default (props) => (
