@@ -14,12 +14,42 @@
     width: fit-content;
 }
 
+.dropdownContent {
+  border: 1.5px solid white;
+  border-radius: 0.25em;
+  display: none;
+  position: absolute;
+}
+
+.droppingDown {
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+}
+
+.droppingDown a {
+  color: darkblue;
+  margin: 1em;
+}
+
 .navLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
   width: 50%;
+}
+
+.navLinks button {
+  background: darkblue;
+  border: none;
+  color: white;
+  padding: unset
+}
+
+.navLinks button:focus {
+  outline: none;
 }
 
 .navLinks li a {
@@ -52,6 +82,11 @@ ul {
     position: fixed;
     z-index: 20;
   }
+
+  .droppingDown {
+    display: inline-flex;
+    flex-direction: column;
+}
 
   .navLinks {
     align-items: center;
@@ -86,5 +121,11 @@ ul {
 
   ul {
     padding-inline-start: unset;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .droppingDown {
+    max-width: 130px;
   }
 }
