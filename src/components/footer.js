@@ -8,8 +8,8 @@ import YourLogoHere from '../images/yourlogohere.png'
 import footerStyles from "./footer.module.css"
 
 export default () => (
-  <div>
-    <p className={footerStyles.footer}>
+  <div className={footerStyles.footer}>
+    <p className={footerStyles.footerText}>
       We're grateful to our partners for their support:
     </p>
     <div className={footerStyles.footerLogos}>
