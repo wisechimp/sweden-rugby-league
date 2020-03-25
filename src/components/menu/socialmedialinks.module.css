@@ -4,7 +4,7 @@ img.flagIcon {
 }
 .socialGroup {
   padding: 0.5em;
-  position: absolute;
+  align-self: center;
   right: 1em;
 }
 .socialGroup a {
@@ -12,13 +12,16 @@ img.flagIcon {
   padding-right: 1em;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .socialGroup {
-    position: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
     right: 0;
   }
 
   .socialGroup a {
-    padding-right: 2em;
+    padding-right: unset;
   }
 }

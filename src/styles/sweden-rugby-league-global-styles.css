@@ -84,18 +84,20 @@ p {
 	}
 }
 /*Presenting the menu bar in a material designish kind of fashion */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 769px) {
 	.actionBar {
 		display: none;
 	}
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
 	h1 {
 		display: none;
-	}
+  }
+  
   .brandname {
     min-height: max-content;
   }
+
   .navbar-brand {
     margin-right: 0;
     position: absolute;
@@ -104,7 +106,7 @@ p {
   }
 }
 /*Reordering the components on the contacts page */
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 768px) {
   .contactContainer {
     align-items: center;
     display: grid;

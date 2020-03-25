@@ -1,0 +1,90 @@
+.actionBar{
+  align-content: space-between;
+  background-color: darkblue;
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+.brand {
+    align-self: center;
+    padding: 1em;
+    width: fit-content;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  width: 50%;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navUnit {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ul {
+  margin-bottom: unset;
+}
+
+/*
+    Moving the "Action Bar" to the bottom when being used on a mobile for ease
+    of use for mobile customers
+*/
+
+@media screen and (max-width: 768px) {
+  .actionBar {
+    bottom: 0px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 20;
+  }
+
+  .navLinks {
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%
+  }
+
+  .navUnit {
+    background: darkblue;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    clip-path: circle(100px at 50% 120%);
+    -webkit-clip-path: circle(100px at 50% 120%);
+    transition: all 1s ease-out;
+  }
+
+  .navUnit.open {
+    clip-path: circle(2000px at 50% 120%);
+    -webkit-clip-path: circle(2000px at 50% 120%);
+  }
+
+  .socialButts {
+    height: 20vh;
+    position: relative;
+    width: 100%;
+  }
+
+  ul {
+    padding-inline-start: unset;
+  }
+}
