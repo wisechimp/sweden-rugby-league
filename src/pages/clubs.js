@@ -39,7 +39,7 @@ export default () => {
   ]
 
   return (
-  	<Layout pageTitle="Swedish Clubs">
+  	<Layout pageTitle="SRL Clubs">
 			<div className={clubsPageStyles.clubsContainer}>
 				{clubData.map(club => 
 					<ClubCard

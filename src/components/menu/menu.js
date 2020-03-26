@@ -35,6 +35,9 @@ const Menu =  props => {
 
   return (
     <div className={menuStyles.actionBar}>
+      <div className={menuStyles.pageTitlePosition}>
+        <h3 className={menuStyles.pageTitle}>{props.pageTitle}</h3>
+      </div>
       <Hamburger
         flipper={drawerHandler}
         flippingBurger={flippingBurger}

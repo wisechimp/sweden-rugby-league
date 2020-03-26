@@ -8,12 +8,6 @@
   width: 100%;
 }
 
-.brand {
-    align-self: center;
-    padding: 1em;
-    width: fit-content;
-}
-
 .dropdownContent {
   border: 1.5px solid white;
   border-radius: 0.25em;
@@ -66,6 +60,22 @@
   width: 100%;
 }
 
+.pageTitle {
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.pageTitlePosition {
+  display: none;
+  flex-direction: column;
+  height: inherit;
+  justify-content: center;
+  position: absolute;
+  width: 40%
+}
+
 ul {
   margin-bottom: unset;
 }
@@ -111,6 +121,10 @@ ul {
   .navUnit.open {
     clip-path: circle(2000px at 50% 120%);
     -webkit-clip-path: circle(2000px at 50% 120%);
+  }
+
+  .pageTitlePosition {
+    display: flex;
   }
 
   .socialButts {
