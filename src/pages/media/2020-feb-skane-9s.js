@@ -17,6 +17,9 @@ export default ({ data }) => {
   return (
     <Layout pageTitle="Skane 9's Feb 2020">
       <ImageGallery items={images} lazyLoad />
+      <div className="acknowledgements">
+        <small>Photos courtesy of Melissa Sharp.</small>
+      </div>
     </Layout>
   )
 }
