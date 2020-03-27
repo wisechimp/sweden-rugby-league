@@ -1,3 +1,5 @@
+@import './variables.css';
+
 a {
   text-decoration: underline;
 }
@@ -15,6 +17,11 @@ img.poster {
 }
 p {
   margin-block-end: unset;
+}
+.acknowledgements {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1em;
 }
 .bodyContent {
   padding: 0 1em;
@@ -59,15 +66,12 @@ p {
 }
 .linkButt a {
   align-content: flex-end;
-  background-color: darkblue;
+  background-color: var(--primary-dark);
   border-radius: 0.5em;
-  color: white;
+  color: var(--primary-light);
   float: right;
   margin-right: 1em;
   padding: 0.5em;
-  text-decoration: none;
-}
-.navbar a{
   text-decoration: none;
 }
 .playerCardsContainer {
@@ -83,30 +87,20 @@ p {
 		margin: auto;
 	}
 }
+
 /*Presenting the menu bar in a material designish kind of fashion */
 @media screen and (min-width: 769px) {
 	.actionBar {
 		display: none;
 	}
 }
-@media screen and (max-width: 768px) {
-	h1 {
-		display: none;
-  }
-  
-  .brandname {
-    min-height: max-content;
-  }
 
-  .navbar-brand {
-    margin-right: 0;
-    position: absolute;
-    right: 50%;
-    transform: translate(50%);
-  }
-}
 /*Reordering the components on the contacts page */
 @media screen and (max-width: 768px) {
+  h1 {
+		display: none;
+  }
+
   .contactContainer {
     align-items: center;
     display: grid;

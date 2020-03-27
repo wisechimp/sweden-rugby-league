@@ -1,6 +1,6 @@
 p.carouselCaption {
-  background-color: darkblue;
-  color: white;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
   margin-bottom: 1em;
   padding: 0.5em;
   text-align: center;

@@ -8,7 +8,7 @@ img.flagIcon {
   right: 1em;
 }
 .socialGroup a {
-  color: white;
+  color: var(--primary-light);
   padding-right: 1em;
 }
 

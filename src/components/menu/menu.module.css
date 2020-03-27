@@ -1,6 +1,6 @@
 .actionBar{
   align-content: space-between;
-  background-color: darkblue;
+  background-color: var(--primary-dark);
   display: flex;
   height: 60px;
   flex-direction: row;
@@ -9,14 +9,14 @@
 }
 
 .dropdownContent {
-  border: 1.5px solid white;
+  border: 1.5px solid var(--primary-light);
   border-radius: 0.25em;
   display: none;
   position: absolute;
 }
 
 .droppingDown {
-  background-color: darkblue;
+  background-color: var(--primary-dark);
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -24,7 +24,7 @@
 }
 
 .droppingDown a {
-  color: darkblue;
+  color: var(--primary-dark);
   margin: 1em;
 }
 
@@ -37,9 +37,9 @@
 }
 
 .navLinks button {
-  background: darkblue;
+  background: var(--primary-dark);
   border: none;
-  color: white;
+  color: var(--primary-light);
   padding: unset
 }
 
@@ -48,7 +48,7 @@
 }
 
 .navLinks li a {
-  color: white;
+  color: var(--primary-light);
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .pageTitle {
-  color: white;
+  color: var(--primary-light);
   font-size: 20px;
   margin: 0px;
   text-align: center;
@@ -109,7 +109,7 @@ ul {
   }
 
   .navUnit {
-    background: darkblue;
+    background: var(--primary-dark);
     flex-direction: column;
     height: 100vh;
     position: fixed;
@@ -124,10 +124,6 @@ ul {
   .navUnit.open {
     clip-path: circle(2000px at 50% 120%);
     -webkit-clip-path: circle(2000px at 50% 120%);
-  }
-
-  .navUnit ul {
-    padding-inline-start: unset;
   }
 
   .pageTitlePosition {

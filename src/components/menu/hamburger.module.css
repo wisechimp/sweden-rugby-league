@@ -5,7 +5,7 @@
 @media screen and (max-width: 768px) {
 
     .hamburger {
-        background-color: darkblue;
+        background-color: var(--primary-dark);
         border: 2px solid yellow;
         border-radius: 50%;
         display: block;
@@ -24,8 +24,7 @@
     }
 
     .change .hamburger {
-        background-color: darkblue;
-        border: 5px solid lightsteelblue;
+        background-color: var(--primary-dark);
         border-radius: 50%;
         display: block;
     }
