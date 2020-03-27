@@ -58,27 +58,29 @@ export default ({ data }) => {
 }
 
 export const carouselQuery = graphql`
-  query {
-  	norwayCharge: file(relativePath: { eq: "norwaycharge.jpg" }) {
-      childImageSharp {
-        fluid (maxWidth: 1000, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-		}
-		teamPicture: file(relativePath: { eq: "swedenteamholland2017.jpg" }) {
-			childImageSharp {
-				fluid (maxWidth: 1000, quality: 100) {
-					...GatsbyImageSharpFluid
-				}
-			}
-		}
-		huddleUp: file(relativePath: { eq: "huddleup.jpg" }) {
-			childImageSharp {
-				fluid (maxWidth: 1000, quality: 100) {
-					...GatsbyImageSharpFluid
-				}
-			}
-		}
-  }
-`
+         query {
+           norwayCharge: file(relativePath: { eq: "norwaycharge.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000, quality: 100) {
+                 ...GatsbyImageSharpFluid_withWebp
+               }
+             }
+           }
+           teamPicture: file(
+             relativePath: { eq: "swedenteamholland2017.jpg" }
+           ) {
+             childImageSharp {
+               fluid(maxWidth: 1000, quality: 100) {
+                 ...GatsbyImageSharpFluid_withWebp
+               }
+             }
+           }
+           huddleUp: file(relativePath: { eq: "huddleup.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000, quality: 100) {
+                 ...GatsbyImageSharpFluid_withWebp
+               }
+             }
+           }
+         }
+       `

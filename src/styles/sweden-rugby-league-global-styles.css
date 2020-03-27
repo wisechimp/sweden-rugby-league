@@ -1,6 +1,7 @@
 @import './variables.css';
 
 a {
+  color: var(--primary-dark);
   text-decoration: underline;
 }
 

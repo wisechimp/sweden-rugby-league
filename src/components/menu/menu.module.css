@@ -9,7 +9,7 @@
 }
 
 .dropdownContent {
-  border: 1.5px solid var(--primary-light);
+  border: 1.5px solid var(--primary-contrast);
   border-radius: 0.25em;
   display: none;
   position: absolute;
