@@ -13,6 +13,8 @@ p {
 }
 .linkButt {
   height: 2em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
 }
 .linkButt a{
   background-color: var(--primary-dark);
@@ -20,10 +22,12 @@ p {
   color: var(--primary-light);
   font-size: 0.8em;
   float: right;
-  margin-bottom: 0.5em;
-  margin-right: 1em;
-  padding: 0.25em;
+  
+  
+  min-width: 60px;
+  padding: 0.5em;
   text-decoration: none;
+  text-align: center;
 }
 .matchDetails{
   font-size: 0.8em;
