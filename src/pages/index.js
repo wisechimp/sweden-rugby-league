@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-import Layout from "../components/layout"
-import HomeTitle from "../components/hometitle"
+import Layout from "../components/layout/Layout"
+import HomeTitle from "../components/hometitle/Hometitle"
 import Jumbotron from "../components/jumbotron/Jumbotron"
 import SrlLogo from "../images/srllogomedium.png"
 
