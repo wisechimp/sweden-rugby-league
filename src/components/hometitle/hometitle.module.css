@@ -6,16 +6,19 @@ img.logo {
   min-height: 150px;
 }
 .brandname {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	order: 1;
-  padding-left: 1em;
-  padding-right: 1em;
   /* min-height: 150px; */
   text-align: center;
+	width: 100%;
 }
 .headerContainer {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 1em 0;
 }
 .logo {
   order: 0;

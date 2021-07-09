@@ -11,7 +11,7 @@ export default ({ data }) => {
   console.log(data)
 
   return (
-    <Layout pageTitle="SRL">
+    <Layout pageTitle="Sweden Rugby League">
       <HomeTitle
         title="Sweden Rugby League"
         tagline="The official body responsible for rugby league in Sweden."
