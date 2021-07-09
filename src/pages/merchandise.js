@@ -1,10 +1,10 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-import Layout from '../components/layout'
-import merchandiseStyles from './merchandise.module.css'
+import Layout from "../components/layout/Layout"
+import merchandiseStyles from "./merchandise.module.css"
 
 export default ({ data }) => (
   <Layout pageTitle="Merchandise">
@@ -15,23 +15,31 @@ export default ({ data }) => (
     />
     <div className={`${merchandiseStyles.bigBuyButt} linkButt`}>
       <OutboundLink
-          href="https://1908.store/collections/frontpage/products/sweden-national-jersey"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Buy Now!</OutboundLink>
-    </div>
-    <p className={merchandiseStyles.shopText}>
-      The national team's current kit is supplied by the <OutboundLink
-        href="https://1908.store/pages/about-us"
-        target="_blank"
-        rel="noopener noreferrer"
-      >Baskerville project</OutboundLink>
-      . If you are interested in getting your own to show you support for Sweden
-      rugby league then please visit them <OutboundLink
         href="https://1908.store/collections/frontpage/products/sweden-national-jersey"
         target="_blank"
         rel="noopener noreferrer"
-      >here</OutboundLink>
+      >
+        Buy Now!
+      </OutboundLink>
+    </div>
+    <p className={merchandiseStyles.shopText}>
+      The national team's current kit is supplied by the{" "}
+      <OutboundLink
+        href="https://1908.store/pages/about-us"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Baskerville project
+      </OutboundLink>
+      . If you are interested in getting your own to show you support for Sweden
+      rugby league then please visit them{" "}
+      <OutboundLink
+        href="https://1908.store/collections/frontpage/products/sweden-national-jersey"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        here
+      </OutboundLink>
       .
     </p>
   </Layout>

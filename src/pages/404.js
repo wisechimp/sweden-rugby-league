@@ -1,18 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout/Layout"
 import SrlLogo from "../images/srllogolarge.png"
-import errorStyles from './404.module.css'
+import errorStyles from "./404.module.css"
 
 export default () => (
   <Layout pageTitle="Whoops!">
     <h1>Whoops!</h1>
     <div className={errorStyles.logo}>
-      <img
-        src={SrlLogo}
-        alt="Sweden Rugby League's Logo"
-      />
+      <img src={SrlLogo} alt="Sweden Rugby League's Logo" />
     </div>
     <div className="bodyContent">
       <p align="center">
