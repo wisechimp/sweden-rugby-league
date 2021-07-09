@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react"
 
-import Layout from '../components/layout'
-import ClubCard from '../components/clubcard'
-import BroncosLogo from '../images/kungsbackalogosmall.png'
-import StagsLogo from '../images/skanestagslogo.png'
-import KungarLogo from '../images/kungarlogo.jpg'
-import clubsPageStyles from './clubs.module.css'
+import Layout from "../components/layout/Layout"
+import ClubCard from "../components/clubcard"
+import BroncosLogo from "../images/kungsbackalogosmall.png"
+import StagsLogo from "../images/skanestagslogo.png"
+import KungarLogo from "../images/kungarlogo.jpg"
+import clubsPageStyles from "./clubs.module.css"
 
 export default () => {
-	const clubData = [
+  const clubData = [
     {
       key: 1,
       clubName: "Kungsbacka Broncos",
@@ -39,18 +39,19 @@ export default () => {
   ]
 
   return (
-  	<Layout pageTitle="SRL Clubs">
-			<div className={clubsPageStyles.clubsContainer}>
-				{clubData.map(club => 
-					<ClubCard
-						key={club.key}
-						clubName={club.clubName}
-						imgSrc={club.imgSrc}
-						imgAlt={club.imgAlt}
-						description={club.description}
-						clubLink={club.clubLink}
-					/>)
-				}
-			</div>
+    <Layout pageTitle="SRL Clubs">
+      <div className={clubsPageStyles.clubsContainer}>
+        {clubData.map(club => (
+          <ClubCard
+            key={club.key}
+            clubName={club.clubName}
+            imgSrc={club.imgSrc}
+            imgAlt={club.imgAlt}
+            description={club.description}
+            clubLink={club.clubLink}
+          />
+        ))}
+      </div>
     </Layout>
-)}
+  )
+}

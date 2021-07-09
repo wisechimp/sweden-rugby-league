@@ -6,17 +6,21 @@
 
     .hamburger {
         background-color: var(--primary-dark);
-        border: 2px solid yellow;
+        border: 2px solid var(--primary-away);
         border-radius: 50%;
         display: block;
+        height: 50px;
         margin: 0 auto;
-        width: 54px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 50px;
         z-index: 25;
     }
 
     .hamburgerBunTop, .hamburgerMeat, .hamburgerBunBottom {
         align-self: center;
-        background-color: yellow;
+        background-color: var(--primary-away);
         height: 3px;
         margin: 6px auto;
         transition: 0.4s;

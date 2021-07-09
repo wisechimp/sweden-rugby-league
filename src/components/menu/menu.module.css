@@ -2,7 +2,7 @@
   align-content: space-between;
   background-color: var(--primary-dark);
   display: flex;
-  height: 60px;
+  height: 66px;
   flex-direction: row;
   position: relative;
   width: 100%;
@@ -28,28 +28,32 @@
   margin: 1em;
 }
 
-.navLinks {
+.menuContainer {
   display: flex;
   flex-direction: row;
+  font-size: large;
   justify-content: space-around;
-  list-style: none;
-  width: 50%;
+  width: 60%;
 }
 
-.navLinks button {
+.menuContainer button {
   background: var(--primary-dark);
   border: none;
   color: var(--primary-light);
   padding: unset
 }
 
-.navLinks button:focus {
+.menuContainer button:focus {
   outline: none;
 }
 
-.navLinks li a {
+.menuContainer a {
   color: var(--primary-light);
   text-decoration: none;
+}
+
+.menuContainer li {
+  list-style-type: none;
 }
 
 .navUnit {
@@ -83,13 +87,12 @@ ul {
 }
 
 /*
-    Moving the "Action Bar" to the bottom when being used on a mobile for ease
-    of use for mobile customers
+    Moving the "Action Bar" to the top right when being used on a mobile for ease
+    of use for mobile users
 */
 
 @media screen and (max-width: 768px) {
   .actionBar {
-    bottom: 0px;
     justify-content: space-between;
     position: fixed;
     z-index: 20;
@@ -98,7 +101,15 @@ ul {
   .droppingDown {
     display: inline-flex;
     flex-direction: column;
-}
+  }
+
+  .menuContainer {
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 0;
+    width: 100%;
+  }
 
   .navLinks {
     align-items: center;
@@ -116,14 +127,14 @@ ul {
     left: 0px;
     top: 0px;
     width: 100%;
-    clip-path: circle(100px at 50% 120%);
-    -webkit-clip-path: circle(100px at 50% 120%);
+    clip-path: circle(100px at 120% -20%);
+    -webkit-clip-path: circle(100px at 120% -20%);
     transition: all 1s ease-out;
   }
 
   .navUnit.open {
-    clip-path: circle(2000px at 50% 120%);
-    -webkit-clip-path: circle(2000px at 50% 120%);
+    clip-path: circle(2000px at 120% -20%);
+    -webkit-clip-path: circle(2000px at 120% -20%);
   }
 
   .pageTitlePosition {
@@ -131,7 +142,7 @@ ul {
   }
 
   .socialButts {
-    height: 20vh;
+    height: 60px;
     position: relative;
     width: 100%;
   }
