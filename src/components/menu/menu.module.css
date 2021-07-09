@@ -40,6 +40,7 @@
   background: var(--primary-dark);
   border: none;
   color: var(--primary-light);
+  font-size: large;
   padding: unset
 }
 

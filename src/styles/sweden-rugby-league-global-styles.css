@@ -24,6 +24,12 @@ img.poster {
 p {
   margin-block-end: unset;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .acknowledgements {
   display: flex;
   justify-content: flex-end;

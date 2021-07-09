@@ -21,6 +21,11 @@ img.flagIcon {
     right: 0;
   }
 
+  .socialGroup svg {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
   .socialGroup a {
     padding-right: unset;
   }
