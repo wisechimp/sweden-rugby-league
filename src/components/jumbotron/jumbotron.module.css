@@ -1,0 +1,7 @@
+.captionBox {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}

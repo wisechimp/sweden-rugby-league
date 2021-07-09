@@ -40,6 +40,7 @@
   background: var(--primary-dark);
   border: none;
   color: var(--primary-light);
+  font-size: large;
   padding: unset
 }
 
@@ -79,7 +80,7 @@
   height: inherit;
   justify-content: center;
   position: absolute;
-  width: 40%
+  width: 100%
 }
 
 ul {

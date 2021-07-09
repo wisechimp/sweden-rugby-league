@@ -5,6 +5,11 @@ a {
   text-decoration: underline;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
 h1 {
   font-size: 2em;
   margin: 0.5em;
@@ -19,6 +24,12 @@ img.poster {
 p {
   margin-block-end: unset;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .acknowledgements {
   display: flex;
   justify-content: flex-end;
