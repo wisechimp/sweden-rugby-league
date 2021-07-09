@@ -1,9 +1,9 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from '../components/layout'
-import MediaCard from '../components/mediacard'
-import mediaStyles from './media.module.css'
+import Layout from "../components/layout/Layout"
+import MediaCard from "../components/mediacard"
+import mediaStyles from "./media.module.css"
 
 export default ({ data }) => {
   console.log(data)
@@ -40,24 +40,24 @@ export default ({ data }) => {
 }
 
 export const mediaQuery = graphql`
-query {
-	allMediaJson {
-		edges {
-      node {
-        id
-        eventTitle
-        date
-        photoIcon
-        thumbnail {
-         childImageSharp {
-            fixed(width: 300) {
-						 ...GatsbyImageSharpFixed
-						}
-					}
-				}
-			 	link
-		  }
-	  }
-	}
-}
+  query {
+    allMediaJson {
+      edges {
+        node {
+          id
+          eventTitle
+          date
+          photoIcon
+          thumbnail {
+            childImageSharp {
+              fixed(width: 300) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          link
+        }
+      }
+    }
+  }
 `

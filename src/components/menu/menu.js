@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 
-import Hamburger from './hamburger'
+import Hamburger from "./hamburger"
 import SocialMediaLinks from "./socialmedialinks"
-import menuStyles from './menu.module.css'
+import * as menuStyles from "./menu.module.css"
 
-const Menu =  props => {
+const Menu = props => {
   const [flippingBurger, setFlippingBurger] = useState(false)
   const [newsDrop, setNewsDrop] = useState(false)
   const [aboutDrop, setAboutDrop] = useState(false)
@@ -48,7 +48,7 @@ const Menu =  props => {
           !flippingBurger ? "" : menuStyles.open
         }`}
       >
-        <ul className={menuStyles.navLinks}>
+        <ul className={menuStyles.menuContainer}>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -61,7 +61,7 @@ const Menu =  props => {
             >
               <Link to="/latest-news">News</Link>
               <Link to="/media">Media</Link>
-              <Link to="results">Results</Link>
+              <Link to="/results">Results</Link>
             </div>
           </li>
           <li>
