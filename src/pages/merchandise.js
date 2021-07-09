@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
@@ -41,6 +41,12 @@ export default ({ data }) => (
         here
       </OutboundLink>
       .
+      <br />
+      <br />
+      UPDATE: The National Team jersey is currently sold out with our suppliers.
+      If you would like to get your hands on one them please{" "}
+      <Link to="/Contact">Contact us</Link> and we will work to arrange a
+      re-stock to meet demand.
     </p>
   </Layout>
 )

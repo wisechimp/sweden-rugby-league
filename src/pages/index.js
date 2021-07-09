@@ -29,7 +29,7 @@ export default ({ data }) => {
           sport of <Link to="/what-is-rugby-league">rugby league</Link> in
           Sweden. They were admitted to the{" "}
           <OutboundLink
-            href="https://www.rlef.eu.com"
+            href="https://europeanrugbyleague.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,7 +38,7 @@ export default ({ data }) => {
           in 2011 as Observer members. They oversee the national competition in
           Sweden and the national team who were{" "}
           <OutboundLink
-            href="http://www.rlif.com/article/8789/kiwis-take-no--spot-in-latest-international-rugby-league-world-rankings"
+            href="https://intrl.sport/world-rankings/"
             target="_blank"
             rel="noopener noreferrer"
           >
