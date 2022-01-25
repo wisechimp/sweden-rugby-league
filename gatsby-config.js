@@ -14,7 +14,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
@@ -45,7 +44,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `news`,
-        path: `${__dirname}/src/pages/news`,
+        path: `${__dirname}/src/mdxpages`,
       },
     },
     {
