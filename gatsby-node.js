@@ -1,4 +1,4 @@
-/* const path = require(`path`)
+const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = ({ graphql, actions }) => {
@@ -7,11 +7,11 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     {
-      allWordpressPost {
+      allMdx {
         edges {
           node {
             slug
-            wordpress_id
+            id
           }
         }
       }
@@ -21,15 +21,15 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    const BlogPosts = result.data.allWordpressPost.edges
-    BlogPosts.forEach(post => {
+    const BlogPosts = result.data.allMdx.edges
+    BlogPosts.forEach(({ node }, index) => {
       createPage({
-        path: `/news/${post.node.slug}`,
+        path: `/news/${node.slug}`,
         component: BlogPostTemplate,
         context: {
-          id: post.node.wordpress_id,
+          id: node.id,
         },
       })
     })
   })
-} */
+}
