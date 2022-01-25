@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Parser from "html-react-parser"
 
 import Layout from "../components/layout/Layout"
 import NewsSnippet from "../components/newssnippet"
@@ -12,25 +11,25 @@ export default ({ data }) => {
   return (
     <Layout pageTitle="Latest News">
       <h1>Latest News</h1>
-      <div>
+      {/* <div>
         {data.allWordpressPost.edges.map(({ node }) => {
           return (
             <NewsSnippet
               key={node.id}
-              headline={Parser(node.title)}
+              headline={node.title}
               date={node.date}
-              snippet={Parser(node.excerpt)}
+              snippet={node.excerpt}
               slug={node.slug}
               imgSrc={node.jetpack_featured_media_url}
             />
           )
         })}
-      </div>
+      </div> */}
     </Layout>
   )
 }
 
-export const newsQuery = graphql`
+/* export const newsQuery = graphql`
   query {
     allWordpressPost {
       edges {
@@ -46,4 +45,4 @@ export const newsQuery = graphql`
       }
     }
   }
-`
+` */

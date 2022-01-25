@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -48,26 +49,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `news`,
+        path: `${__dirname}/src/pages/news`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GOOGLE_TRACKING_ID,
         anonymize: true,
         respectDNT: true,
-      },
-    },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        baseUrl: `swedenrugbyleague.wordpress.com`,
-        protocol: `http`,
-        hostingWPCOM: true,
-        useACF: false,
-        auth: {
-          wpcom_app_clientSecret: process.env.WPCOM_APP_CLIENT_SECRET,
-          wpcom_app_clientId: process.env.WPCOM_APP_CLIENTID,
-          wpcom_user: process.env.WPCOM_USERNAME,
-          wpcom_password: process.env.WPCOM_PASSWORD,
-        },
       },
     },
     {
