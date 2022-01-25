@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Img from 'gatsby-image'
 
 import styles from "./newssnippet.module.css"
 
@@ -12,7 +13,7 @@ export default props => (
       <p>{props.date}</p>
     </div>
     <div>
-      <img className={styles.newsImage} src={props.imgSrc} alt=""/>
+      <Img className={styles.newsImage} fluid={props.imgSrc} alt=""/>
     </div>
     <div className={styles.newsSnippet}>
       <p>{props.snippet}</p>

@@ -11,38 +11,45 @@ export default ({ data }) => {
   return (
     <Layout pageTitle="Latest News">
       <h1>Latest News</h1>
-      {/* <div>
-        {data.allWordpressPost.edges.map(({ node }) => {
+      <div>
+        {data.allMdx.edges.map(({ node }) => {
           return (
             <NewsSnippet
               key={node.id}
-              headline={node.title}
-              date={node.date}
+              headline={node.frontmatter.title}
+              date={node.frontmatter.date}
               snippet={node.excerpt}
               slug={node.slug}
-              imgSrc={node.jetpack_featured_media_url}
+              imgSrc={node.frontmatter.imageSrc.childImageSharp.fluid}
             />
           )
         })}
-      </div> */}
+      </div>
     </Layout>
   )
 }
 
-/* export const newsQuery = graphql`
+export const newsQuery = graphql`
   query {
-    allWordpressPost {
+    allMdx{
       edges {
         node {
           id
-          content
-          date(formatString: "Do MMMM, YYYY")
           slug
           excerpt
-          title
-          jetpack_featured_media_url
+          frontmatter {
+            title
+            date(formatString: "Do MMMM, YYYY")
+            imageSrc{
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
+          }
         }
       }
     }
   }
-` */
+`
