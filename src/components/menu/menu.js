@@ -74,6 +74,7 @@ const Menu = props => {
                 !aboutDrop ? "" : menuStyles.droppingDown
               }`}
             >
+              <Link to="/board">Board</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/what-is-rugby-league">Rugby League</Link>
             </div>

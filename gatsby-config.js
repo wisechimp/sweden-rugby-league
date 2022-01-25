@@ -14,9 +14,18 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `board`,
+        path: `${__dirname}/src/data/boardmembers`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
