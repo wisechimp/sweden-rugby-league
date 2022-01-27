@@ -4,8 +4,12 @@
   display: flex;
   height: var(--action-bar-height);
   flex-direction: row;
-  position: fixed;
   width: 100%;
+}
+
+.actionBar ul {
+  margin: 0;
+  padding: 0;
 }
 
 .dropdownContent {
@@ -93,6 +97,7 @@ ul {
 @media screen and (max-width: 768px) {
   .actionBar {
     justify-content: space-between;
+    position: fixed;
     z-index: 20;
   }
 

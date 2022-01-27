@@ -22,14 +22,10 @@ img.poster {
   max-width: 100%;
   padding-bottom: 1em;
 }
+
 p {
   margin-block-start: unset;
   margin-block-end: unset;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 .acknowledgements {
