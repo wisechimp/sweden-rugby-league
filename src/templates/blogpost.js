@@ -1,10 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from 'gatsby-image'
 
 import Layout from "../components/layout/Layout"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import blogStyles from "./blogpost.module.css"
+
+const mdxComponents = { OutboundLink }
 
 const BlogPostTemplate = ({ data }) => {
   const { frontmatter, body } = data.mdx
@@ -16,7 +20,11 @@ const BlogPostTemplate = ({ data }) => {
         <p>Posted by {frontmatter.author} on {frontmatter.date}</p>
         <Img fluid={frontmatter.imageSrc.childImageSharp.fluid} alt="" />
         <br />
-        <MDXRenderer>{body}</MDXRenderer>
+        <MDXProvider
+          components={mdxComponents}
+        >
+          <MDXRenderer>{body}</MDXRenderer>
+        </MDXProvider>
       </div>
     </Layout>
 )}

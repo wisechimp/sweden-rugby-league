@@ -31,7 +31,7 @@ export default ({ data }) => {
 
 export const newsQuery = graphql`
   query {
-    allMdx{
+    allMdx(sort: {fields: frontmatter___date, order: DESC}){
       edges {
         node {
           id
