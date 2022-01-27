@@ -15,6 +15,7 @@ h1 {
   margin: 0.5em;
   width: auto;
 }
+
 img.poster {
   display: block;
   margin: auto;
@@ -37,7 +38,7 @@ ul {
   padding: 0 1em;
 }
 .bodyContent {
-  padding: 0 1em;
+  padding: 1em;
 }
 .carousel-control-next {
   margin-bottom: 2.5em;

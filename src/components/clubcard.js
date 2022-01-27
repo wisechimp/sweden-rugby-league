@@ -5,7 +5,7 @@ import clubcardStyles from './clubcard.module.css'
 
 export default (props) => (
     <div className={clubcardStyles.cardStructure}>
-        <h5>{props.clubName}</h5>
+        <h2>{props.clubName}</h2>
         <img 
             src={props.imgSrc}
             alt={props.imgAlt}

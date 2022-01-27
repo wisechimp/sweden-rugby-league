@@ -25,7 +25,7 @@ export default ({ data }) => {
       />
       <div className="bodyContent">
         <p>
-          Sweden Rugby League were founded in 2009 with the aim to organise the
+          Sweden Rugby League was founded in 2009 with the aim to introduce and grow the
           sport of <Link to="/what-is-rugby-league">rugby league</Link> in
           Sweden. They were admitted to the{" "}
           <OutboundLink
@@ -33,18 +33,18 @@ export default ({ data }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Rugby League European Federation
+            European Rugby League
           </OutboundLink>{" "}
-          in 2011 as Observer members. They oversee the national competition in
+          in 2011 as Observer members. They oversee the <Link to="/clubs">national competition</Link> in
           Sweden and the national team who were{" "}
           <OutboundLink
             href="https://intrl.sport/world-rankings/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ranked 30th
+            ranked 32nd
           </OutboundLink>{" "}
-          in the world at the start of 2020.
+          in the world at the start of 2022.
         </p>
       </div>
     </Layout>

@@ -15,7 +15,7 @@ export default () => {
       imgSrc: BroncosLogo,
       imgAlt: "The Kungsbacka Broncos logo",
       description:
-        "Kungsbacka Broncos are a club based in the Gothenburg region.",
+        "Kungsbacka Broncos are a rugby league club based in the Gothenburg region closely allied to Spartacus RU.",
       clubLink: "https://www.facebook.com/KungsbackaRugbyClub/",
     },
     {
@@ -24,7 +24,7 @@ export default () => {
       imgSrc: StagsLogo,
       imgAlt: "The Skane Stags logo",
       description:
-        "Skåne Stags are a rugby league club with players from the main cities in the south of Sweden.",
+        "Skåne Stags are a rugby league club with players from in and around the main cities in the south of Sweden.",
       clubLink: "https://www.skanestags.com",
     },
     {
@@ -33,7 +33,7 @@ export default () => {
       imgSrc: KungarLogo,
       imgAlt: "The Stockholm Kungar logo",
       description:
-        "The Stockholm Kungar are the side representing the Swedish capital",
+        "The Stockholm Kungar are the rugby league side representing the Swedish capital and surrounding region",
       clubLink: "https://www.facebook.com/stockholm.rl/",
     },
   ]

@@ -16,20 +16,19 @@ export default () => (
       src="https://www.youtube.com/embed/vFwHtFJarhE"
     />
     <div className="bodyContent">
-      <br />
-      <h3>
+      <h2>
         <i>A Brief History</i>
-      </h3>
+      </h2>
       <div>
         <p>
-          In 1895 representatives of the 22 clubs based in the North of England
+          In 1895 representatives of 22 rugby clubs, based in the North of England,
           decided to split from the Rugby Football Union (RFU) and start a new
           organisation called the Northern Union, which would become the Rugby
           Football League (RFL). The reason for this split was the desire to pay
           players for turning out for the clubs. At the time players worked 6
           days a week and would have to take time off from work to play, which
           of course meant that they missed out on their work payment. This
-          wasn't such an issue for clubs in the south of England where players
+          wasn't such an issue for clubs in the south of England, where players
           were often wealthy gentlemen. However in poorer regions this was a
           problem. The Northern clubs had proposed to reimburse people for lost
           earnings but this had been refused by the RFU. They had seen how

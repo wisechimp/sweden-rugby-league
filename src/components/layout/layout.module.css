@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
   .childrenContainer {
-    padding-top: 66px;
+    padding-top: var(--action-bar-height);
   }
 }
