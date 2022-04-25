@@ -47,7 +47,19 @@ export default ({ data }) => (
       If you would like to get your hands on one them please{" "}
       <Link to="/Contact">Contact us</Link> and we will work to arrange a
       re-stock to meet demand.
+      <br />
+      <br />
+      NEW! You can also buy Sweden Rugby League branded items from our print on demand shop which is hosted by Spreadshirt. We have a range of t-shirts and polos for all sizes plus other items such as stickers, mugs and even teddy bears!
     </p>
+    <div className={`${merchandiseStyles.bigBuyButt} linkButt`}>
+        <OutboundLink
+          href="https://sweden-rugby-league.myspreadshop.se/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit the SRL Spreadshop!
+        </OutboundLink>
+      </div>
   </Layout>
 )
 
