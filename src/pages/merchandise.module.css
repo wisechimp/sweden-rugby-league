@@ -1,5 +1,6 @@
 .bigBuyButt {
     height: 2.1em;
+    margin: 1em;
     text-align: center;
 }
 .bigBuyButt a {
@@ -8,7 +9,7 @@
 }
 .shirtImage {
     max-width: 450px;
-    margin: 1em auto;
+    margin: 1em auto 0;
 }
 .shopText {
     padding: 0 1em;
