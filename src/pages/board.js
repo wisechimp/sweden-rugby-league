@@ -1,4 +1,4 @@
-import React from "react"
+/* import React from "react"
 import { graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 
@@ -53,3 +53,4 @@ export const boardQuery = graphql`
     }
   }
 `
+ */
