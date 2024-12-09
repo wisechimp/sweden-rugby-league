@@ -1,6 +1,6 @@
-import { getPartners } from "@/sanity/sanity-utils"
-import Image from "next/image"
-import Link from "next/link"
+import { getPartners } from '@/sanity/sanity-utils'
+import Image from 'next/image'
+import Link from 'next/link'
 
 import * as styles from './footer.module.css'
 
@@ -9,18 +9,13 @@ const Footer = async () => {
 
   return (
     <div className={styles.footerContainer}>
-      <h2>
-        We are grateful to our partners for their support:
-      </h2>
+      <h2>We are grateful to our partners for their support:</h2>
       <div className={styles.footerPartnersContainer}>
-        {partnersData.map(partner => (
+        {partnersData.map((partner) => (
           <div key={partner._id}>
-            <Image
-            src={partner.logo}
-            alt={partner.logoAltText}
-            width={200}
-            height={100}
-            />
+            <Link href={partner.url}>
+              <Image src={partner.logo} alt={partner.logoAltText} width={200} height={100} />
+            </Link>
           </div>
         ))}
       </div>
@@ -30,7 +25,7 @@ const Footer = async () => {
         </p>
         <br />
         <p className={styles.footerLink}>
-            <Link href="/contact">Click</Link> for more information. 
+          <Link href="/contact">Click</Link> for more information.
         </p>
       </div>
     </div>
