@@ -36,24 +36,6 @@ p {
 .bodyContent {
   padding: 1em;
 }
-.carousel-control-next {
-  margin-bottom: 2.5em;
-}
-.carousel-control-prev {
-  margin-bottom: 2.5em;
-}
-.carousel-indicators li {
-  background-color: rgba(201, 76, 76, 0.0);
-  background-image: url(../images/balls.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 1.5em;
-  height: 1.5em;
-  margin-left: 6px;
-  margin-right: 6px;
-  margin-bottom: 2.5em;
-}
 .contactBox {
   margin: 1em;
 }
