@@ -1,0 +1,18 @@
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuItemContainer svg {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 512px) {
+  .menuItemContainer a {
+    visibility: hidden;
+  }
+
+  .menuItemContainer svg {
+    visibility: visible;
+  }
+}
