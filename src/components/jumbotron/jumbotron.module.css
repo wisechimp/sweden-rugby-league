@@ -5,3 +5,8 @@
   padding: 1em;
   text-align: center;
 }
+
+.jumbotronImage img {
+  display: block;
+  margin: 0 auto;
+}
