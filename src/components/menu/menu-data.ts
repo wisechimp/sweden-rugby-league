@@ -5,13 +5,41 @@ const menudata = [
     key: 1001,
     title: 'Home',
     link: '/',
-    Icon: FaHome,
   },
   {
     key: 1002,
     title: 'News',
     link: '/news',
-    Icon: FaNewspaper,
+  },
+  {
+    key: 1003,
+    title: 'Results',
+    link: '/results',
+  },
+  {
+    key: 1004,
+    title: 'Clubs',
+    link: '/clubs',
+  },
+  {
+    key: 1005,
+    title: 'Contact',
+    link: '/contact',
+  },
+  {
+    key: 1006,
+    title: 'Rugby League?',
+    link: '/rugby-league',
+  },
+  {
+    key: 1007,
+    title: 'Shop',
+    link: '/shop',
+  },
+  {
+    key: 1008,
+    title: 'Governance',
+    link: '/governance',
   },
 ]
 

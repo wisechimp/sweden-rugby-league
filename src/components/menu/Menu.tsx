@@ -1,15 +1,13 @@
-import menudata from './menu-data'
-import MenuItem from './MenuItem'
-
 import * as styles from './menu.module.css'
+import MenuDropdownButton from './menu-dropdown-button'
 
 const Menu = () => {
   return (
-    <div className={styles.menuContainer}>
-      {menudata.map((menuItem) => {
-        return <MenuItem key={menuItem.key} data={menuItem} />
-      })}
-    </div>
+    <nav className={styles.menuContainer}>
+      <MenuDropdownButton menu="National Team" />
+      <MenuDropdownButton menu="Clubs" />
+      <MenuDropdownButton menu="About" />
+    </nav>
   )
 }
 

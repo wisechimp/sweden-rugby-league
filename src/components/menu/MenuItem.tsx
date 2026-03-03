@@ -1,18 +1,31 @@
-import MenuItemType from '@/types/MenuItem'
+'use client'
 import Link from 'next/link'
+import MenuItemType from '@/types/MenuItem'
 
 import * as styles from './menu.module.css'
 
 type MenuItemProps = {
-  data: MenuItemType
+  data: Array<MenuItemType>
+  menuPopover: string
 }
 
-const MenuItem = ({ data }: MenuItemProps) => {
-  const { title, Icon, link } = data
+const MenuItem = ({ data, menuPopover }: MenuItemProps) => {
+  const handleClosePopover = () => {
+    const popover = document.getElementById(menuPopover)
+    popover?.togglePopover()
+  }
   return (
-    <div className={styles.menuItemContainer}>
-      <Link href={link}>{title}</Link>
-      <Icon />
+    <div className={styles.menuDropdown}>
+      {data.map((menuitem) => {
+        const { key, title, link } = menuitem
+        return (
+          <div key={key}>
+            <button onClick={handleClosePopover}>
+              <Link href={link}>{title}</Link>
+            </button>
+          </div>
+        )
+      })}
     </div>
   )
 }
