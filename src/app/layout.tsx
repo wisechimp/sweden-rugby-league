@@ -1,7 +1,7 @@
 import Footer from '@/components/footer/Footer'
 import '../styles/global.css'
-import Menu from '@/components/menu/Menu'
 import { ReactNode } from 'react'
+import Header from '@/components/header/Header'
 
 type RootLayoutProps = {
   children: ReactNode
@@ -13,7 +13,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <body>
         <div id="root">
           <main>
-            <Menu />
+            <Header />
             {children}
             <Footer />
           </main>
