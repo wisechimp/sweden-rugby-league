@@ -3,9 +3,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import * as styles from './footer.module.css'
+import { fetchMenu } from '@/actions'
 
 const Footer = async () => {
   const partnersData = await getPartners()
+  const footerMenuOne = fetchMenu('National Team')
+  const footerMenuTwo = fetchMenu('Clubs')
+  const footerMenuThree = fetchMenu('About')
 
   return (
     <div className={styles.footerContainer}>
@@ -27,6 +31,29 @@ const Footer = async () => {
         <p className={styles.footerLink}>
           <Link href="/contact">Click</Link> for more information.
         </p>
+      </div>
+      <div className={styles.footerMenus}>
+        <div className={styles.footerSubMenu}>
+          {footerMenuOne?.map((menuItem) => (
+            <Link key={menuItem.key} href={menuItem.link}>
+              {menuItem.title}
+            </Link>
+          ))}
+        </div>
+        <div className={styles.footerSubMenu}>
+          {footerMenuTwo?.map((menuItem) => (
+            <Link key={menuItem.key} href={menuItem.link}>
+              {menuItem.title}
+            </Link>
+          ))}
+        </div>
+        <div className={styles.footerSubMenu}>
+          {footerMenuThree?.map((menuItem) => (
+            <Link key={menuItem.key} href={menuItem.link}>
+              {menuItem.title}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   )
