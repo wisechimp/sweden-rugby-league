@@ -1,0 +1,27 @@
+.socialGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  margin: auto;
+  padding: 2em 0 1em 0;
+  width: 60%
+}
+.socialGroup a {
+  color: var(--primary-dark);
+}
+
+.socialGroup svg {
+    height: 1.5em;
+    width: 1.5em;
+  }
+
+@media screen and (max-width: 768px) {
+  .socialGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    right: 0;
+  }
+}

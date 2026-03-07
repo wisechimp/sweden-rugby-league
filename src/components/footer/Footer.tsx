@@ -1,15 +1,15 @@
-import { getPartners } from '@/sanity/sanity-utils'
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import * as styles from './footer.module.css'
-import { fetchMenu } from '@/actions'
+import { fetchMenu } from "@/actions";
+import { getPartners } from "@/sanity/sanity-utils";
+
+import FooterSocialMediaLinks from "./footer-social-links";
+import FooterSubMenu from "./footer-sub-menu";
+import * as styles from "./footer.module.css";
 
 const Footer = async () => {
-  const partnersData = await getPartners()
-  const footerMenuOne = fetchMenu('National Team')
-  const footerMenuTwo = fetchMenu('Clubs')
-  const footerMenuThree = fetchMenu('About')
+  const partnersData = await getPartners();
 
   return (
     <div className={styles.footerContainer}>
@@ -18,7 +18,12 @@ const Footer = async () => {
         {partnersData.map((partner) => (
           <div key={partner._id}>
             <Link href={partner.url}>
-              <Image src={partner.logo} alt={partner.logoAltText} width={200} height={100} />
+              <Image
+                src={partner.logo}
+                alt={partner.logoAltText}
+                width={200}
+                height={100}
+              />
             </Link>
           </div>
         ))}
@@ -32,31 +37,14 @@ const Footer = async () => {
           <Link href="/contact">Click</Link> for more information.
         </p>
       </div>
+      <FooterSocialMediaLinks />
       <div className={styles.footerMenus}>
-        <div className={styles.footerSubMenu}>
-          {footerMenuOne?.map((menuItem) => (
-            <Link key={menuItem.key} href={menuItem.link}>
-              {menuItem.title}
-            </Link>
-          ))}
-        </div>
-        <div className={styles.footerSubMenu}>
-          {footerMenuTwo?.map((menuItem) => (
-            <Link key={menuItem.key} href={menuItem.link}>
-              {menuItem.title}
-            </Link>
-          ))}
-        </div>
-        <div className={styles.footerSubMenu}>
-          {footerMenuThree?.map((menuItem) => (
-            <Link key={menuItem.key} href={menuItem.link}>
-              {menuItem.title}
-            </Link>
-          ))}
-        </div>
+        <FooterSubMenu subMenu="National Team" />
+        <FooterSubMenu subMenu="Clubs" />
+        <FooterSubMenu subMenu="About" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

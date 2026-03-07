@@ -46,9 +46,28 @@
 .footerMenus {
   display: flex;
   justify-content: space-around;
+  margin: auto;
+  width: 80%
+}
+.footerMenus :is(a) {
+  text-decoration: none;
 }
 
 .footerSubMenu {
   display: flex;
   flex-direction: column;
+}
+
+.footerSubMenuItem {
+  display: flex;
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+
+.footerSubMenuItem :is(a) {
+  font-size: medium;
+}
+
+.footerSubMenuItem :is(img) {
+  padding: 0 0.5em;
 }
