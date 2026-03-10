@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { fetchMenu } from "@/actions";
 import { getPartners } from "@/sanity/sanity-utils";
 
 import FooterSocialMediaLinks from "./footer-social-links";

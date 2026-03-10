@@ -6,13 +6,11 @@ import norwayCharge from '../images/norwaycharge.jpg'
 const HomePage = () => {
   return (
     <div>
-      <h1>Sweden Rugby League</h1>
-      <p>Welcome to the home of Rugby League in Sweden.</p>
       <Jumbtron
         imageSrc={norwayCharge}
         imageAltTxt="A Sweden player charges towards the Norwegian defenders with the ball"
       />
-      <div>
+      <div className={'pageMainParagraph'}>
         <p>
           Sweden Rugby League was founded in 2009 with the aim to introduce and grow the sport of{' '}
           <Link href="/rugby-league">rugby league</Link> in Sweden. They were admitted to the{' '}

@@ -33,12 +33,15 @@ p {
   justify-content: flex-end;
   padding: 0 1em;
 }
+
 .bodyContent {
   padding: 1em;
 }
+
 .contactBox {
   margin: 1em;
 }
+
 .contactContainer {
   align-items: center;
   display: grid;
@@ -46,16 +49,20 @@ p {
   justify-items: center;
   width: 100%;
 }
+
 .contactOr {
   display: inline-block;
   text-align: center;
 }
+
 .hidden {
     display: none;
 }
+
 .linkButt {
   height: 2.5em;
 }
+
 .linkButt a {
   align-content: flex-end;
   background-color: var(--primary-dark);
@@ -66,13 +73,17 @@ p {
   padding: 0.5em;
   text-decoration: none;
 }
+
+.pageMainParagraph {
+  padding: 1em;
+}
+
 .playerCardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1em;
 }
 
-/*Adds margin on large screens*/
 @media screen and (min-width: 996px) {
 }
 
