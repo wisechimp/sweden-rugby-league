@@ -33,7 +33,7 @@ const Footer = async () => {
         </p>
         <br />
         <p className={styles.footerLink}>
-          <Link href="/contact">Click</Link> for more information.
+          <Link href="/contact">Contact</Link> us to learn more.
         </p>
       </div>
       <FooterSocialMediaLinks />

@@ -71,3 +71,20 @@
 .footerSubMenuItem :is(img) {
   padding: 0 0.5em;
 }
+
+@media (max-width: 512px) {
+  .footerMenus {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .footerSubMenu {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .footerMenus {
+    justify-content: start;
+  }
+}
