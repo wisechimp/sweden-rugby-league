@@ -59,6 +59,17 @@
   justify-content: space-around;
 }
 
+.menuButton {
+  display: flex;
+}
+
+.menuNavIcon {
+  height: 1em;
+  width: 1em;
+  rotate: none;
+  padding-left: 0.5em;
+}
+
 .menuDropdownContainer:popover-open {
   background: var(--primary-dark);
   border: 0;
