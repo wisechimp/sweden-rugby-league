@@ -16,6 +16,10 @@ h1 {
   width: auto;
 }
 
+h2 {
+  margin: 0 2em;
+}
+
 img.poster {
   display: block;
   margin: auto;
@@ -55,6 +59,12 @@ p {
   text-align: center;
 }
 
+.flexCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .hidden {
     display: none;
 }
@@ -84,6 +94,10 @@ p {
   grid-gap: 1em;
 }
 
+.subHeader :is(h2) {
+  margin-block-start: unset;
+}
+
 @media screen and (min-width: 996px) {
 }
 
@@ -92,6 +106,12 @@ p {
 	.actionBar {
 		display: none;
 	}
+
+  .pageMainParagraph {
+    margin: auto;
+    max-width: 80%;
+    padding: 2em;
+  }
 }
 
 /*Reordering the components on the contacts page */
