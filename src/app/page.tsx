@@ -1,12 +1,14 @@
 import Link from "next/link";
 
+import { fetchClubs } from "@/actions";
 import Clubcard from "@/components/club-card/clubcard";
 import Jumbtron from "@/components/jumbotron/Jumbotron";
-import clubData from "@/data/clubs/clubs";
 
 import norwayCharge from "../images/norwaycharge.jpg";
 
-const HomePage = () => {
+const HomePage = async () => {
+  const clubData = await fetchClubs();
+
   return (
     <div>
       <Jumbtron
@@ -38,7 +40,9 @@ const HomePage = () => {
           in the world as recently as 2022.
         </p>
       </div>
-      <h2 className="subHeader">Our Clubs</h2>
+      <h2>Latest News</h2>
+      <div>Yeah like some latest news here eller hur.</div>
+      <h2>Our Clubs</h2>
       <div className="flexCards">
         {clubData.map((club) => {
           return <Clubcard key={club.key} data={club} />;
