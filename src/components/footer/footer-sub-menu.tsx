@@ -14,6 +14,7 @@ const FooterSubMenu = ({ subMenu }: FooterSubMenuProps) => {
   const footerSubMenu = fetchMenu(subMenu);
   return (
     <div className={styles.footerSubMenu}>
+      <p>{subMenu}</p>
       {footerSubMenu?.map((menuItem) => (
         <div key={menuItem.key} className={styles.footerSubMenuItem}>
           <Image

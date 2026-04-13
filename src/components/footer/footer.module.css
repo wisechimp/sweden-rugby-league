@@ -58,6 +58,12 @@
   flex-direction: column;
 }
 
+.footerSubMenu :is(p) {
+  color: var(--primary-dark);
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
 .footerSubMenuItem {
   display: flex;
   padding: 0.5em 0;
