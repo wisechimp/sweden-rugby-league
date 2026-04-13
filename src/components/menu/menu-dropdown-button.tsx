@@ -22,6 +22,8 @@ const MenuDropdownButton = ({ menu }: MenuDropdownButtonType) => {
     setIconRotated(!iconRotated);
   };
 
+  // https://youtu.be/4hJomamEBfs?si=Fwt8elyGGaySdGBs&t=805
+
   return (
     <div className={styles.menuButtonContainer}>
       <button

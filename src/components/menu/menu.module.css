@@ -36,7 +36,7 @@
 }
 
 .menuContainerCenter :is(img) {
-  z-index: 5;
+  z-index: 2;
 }
 
 .menuContainerRight {
@@ -101,5 +101,31 @@
   width: fit-content;
 }
 
-@media screen and (max-width: 512px) {
+.menuHamburger {
+  display: none;
+}
+
+@media screen and (max-width: 948px) {
+  .menuContainerLeft, .menuContainerRight {
+    display: none;
+  }
+
+  .menuContainerCenter {
+    display: block;
+    left: auto;
+    right: auto;
+    height: calc(var(--header-height) - 16px);
+    width: calc(var(--header-height) - 16px);
+    padding: 8px;
+  }
+
+  .menuContainerCenter :is(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .menuHamburger {
+    display: block;
+  }
 }

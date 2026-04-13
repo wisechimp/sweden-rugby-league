@@ -1,8 +1,10 @@
-import Image from 'next/image'
-import * as styles from './menu.module.css'
-import MenuDropdownButton from './menu-dropdown-button'
-import Logo from '../../images/srllogo.png'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
+
+import Logo from "../../images/srllogo.png";
+import Hamburger from "./hamburger";
+import MenuDropdownButton from "./menu-dropdown-button";
+import * as styles from "./menu.module.css";
 
 const Menu = () => {
   return (
@@ -14,15 +16,21 @@ const Menu = () => {
       </div>
       <div className={styles.menuContainerCenter}>
         <Link href="/">
-          <Image src={Logo} alt="Sweden Rugby League's Logo featuring the three crowns." />
+          <Image
+            src={Logo}
+            alt="Sweden Rugby League's Logo featuring the three crowns."
+          />
         </Link>
       </div>
       <div className={styles.menuContainerRight}>
         <Link href="./contact">Contact</Link>
         <Link href="./get-involved">Join Us!</Link>
       </div>
+      <div className={styles.menuHamburger}>
+        <Hamburger />
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

@@ -1,0 +1,81 @@
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 948px) {
+
+  .hamburger {
+        border: 2px solid var(--primary-away) !important;
+        border-radius: 50%;
+        display: block;
+        height: 50px;
+        margin: 0 auto;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        width: 50px;
+        z-index: 25;
+    }
+
+    .hamburgerBunTop, .hamburgerMeat, .hamburgerBunBottom {
+        align-self: center;
+        background-color: var(--primary-away);
+        height: 3px;
+        margin: 6px auto;
+        transition: 0.4s;
+        width: 30px;
+    }
+
+    .change .hamburger {
+        border-radius: 50%;
+        display: block;
+    }
+    
+    .change .hamburgerBunTop {
+        -webkit-transform: rotate(-45deg) translate(-7px, 7px) ;
+        transform: rotate(-45deg) translate(-7px, 7px) ;
+    }
+    
+    .change .hamburgerMeat {
+        opacity: 0;
+    }
+    
+    .change .hamburgerBunBottom {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+        transform: rotate(45deg) translate(-6px, -6px) ;
+    }
+
+    
+  .popoverDrawer {
+    background: var(--primary-dark);
+		border: none;
+    flex-direction: column;
+    height: calc(100vh - var(--header-height));
+    position: fixed;
+    left: 0px;
+    top: var(--header-height);
+    width: 100%;
+		clip-path: circle(0px at 120% -20%);
+    -webkit-clip-path: circle(0px at 120% -20%);
+    transition:
+			clip-path 1s ease,
+      -webkit-clip-path 1s ease,
+			display 1s ease allow-discrete,
+			overlay 1s ease allow-discrete;
+  }
+
+	.popoverDrawer:popover-open {
+    clip-path: circle(2000px at 120% -20%);
+    -webkit-clip-path: circle(2000px at 120% -20%);
+  }
+
+  @starting-style {
+    .popoverDrawer:popover-open {
+			clip-path: circle(0px at 120% -20%);
+    	-webkit-clip-path: circle(0px at 120% -20%);
+      transition:
+			clip-path 1s ease,
+      -webkit-clip-path 1s ease;
+    }
+  }
+}
