@@ -29,7 +29,6 @@ const MenuDropdownButton = ({ menu }: MenuDropdownButtonType) => {
       <button
         popoverTarget={menupopover}
         popoverTargetAction="toggle"
-        onClick={rotateIcon}
         className={styles.menuButton}
       >
         {menu}
@@ -55,7 +54,12 @@ const MenuDropdownButton = ({ menu }: MenuDropdownButtonType) => {
           ></path>
         </svg>
       </button>
-      <div id={menupopover} popover="" className={styles.menuDropdownContainer}>
+      <div
+        id={menupopover}
+        popover=""
+        onToggle={rotateIcon}
+        className={styles.menuDropdownContainer}
+      >
         <MenuItem data={menuData!} menuPopover={menupopover} />
         <div className={styles.menuDropdownLogo}>
           <Link href="/">
