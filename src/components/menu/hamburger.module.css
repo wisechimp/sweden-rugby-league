@@ -2,6 +2,10 @@
     display: none;
 }
 
+.subMenuUnits :is(p) {
+  color: var(--primary-away);
+}
+
 @media screen and (max-width: 948px) {
 
   .hamburger {

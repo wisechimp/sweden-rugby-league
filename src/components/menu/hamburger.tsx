@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 
+import FooterSubMenu from "../footer/footer-sub-menu";
 import hamburgerStyles from "./hamburger.module.css";
 
 const Hamburger = () => {
@@ -31,7 +32,11 @@ const Hamburger = () => {
         popover=""
         className={hamburgerStyles.popoverDrawer}
       >
-        <p>A menu!</p>
+        <div className={hamburgerStyles.subMenuUnits}>
+          <FooterSubMenu subMenu="National Team" />
+          <FooterSubMenu subMenu="Clubs" />
+          <FooterSubMenu subMenu="About" />
+        </div>
       </div>
     </div>
   );
