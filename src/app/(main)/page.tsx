@@ -3,11 +3,15 @@ import Link from "next/link";
 import { fetchClubs } from "@/actions";
 import Clubcard from "@/components/club-card/clubcard";
 import Jumbtron from "@/components/jumbotron/Jumbotron";
-
-import norwayCharge from "../images/norwaycharge.jpg";
+import NewsCard from "@/components/news/news-card";
+import norwayCharge from "@/images/norwaycharge.jpg";
+import { getNewsItems } from "@/sanity/sanity-utils";
 
 const HomePage = async () => {
   const clubData = await fetchClubs();
+  const latestNewsData = await getNewsItems();
+
+  console.log(latestNewsData);
 
   return (
     <div>
@@ -41,7 +45,11 @@ const HomePage = async () => {
         </p>
       </div>
       <h2>Latest News</h2>
-      <div>Yeah like some latest news here eller hur.</div>
+      <div>
+        {latestNewsData.map((news) => {
+          return <NewsCard key={news._id} newsData={news} />;
+        })}
+      </div>
       <h2>Our Clubs</h2>
       <div className="flexCards">
         {clubData.map((club) => {
