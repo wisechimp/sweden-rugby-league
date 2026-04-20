@@ -1,8 +1,10 @@
-import Page from '@/types/Page'
-import Partner from "@/types/Partner";
 import { groq } from "next-sanity";
-import clientConfig from "./config/client-config";
+
 import NewsItem from "@/types/NewsItem";
+import Page from "@/types/Page";
+import Partner from "@/types/Partner";
+
+import clientConfig from "./config/client-config";
 
 const getPage = async (slug: string): Promise<Page> => {
   return clientConfig.fetch(
@@ -18,8 +20,8 @@ const getPage = async (slug: string): Promise<Page> => {
       "mainImageWidth": mainImage.imagesize[]->width
     }`,
     { slug: slug }
-  )
-}
+  );
+};
 
 const getNewsItems = async (): Promise<NewsItem[]> => {
   return clientConfig.fetch(
@@ -30,10 +32,12 @@ const getNewsItems = async (): Promise<NewsItem[]> => {
       "slug": slug.current,
       "mainImage": mainImage.asset->url,
       "mainImageAltText": mainImage.altText,
+      "mainImageHeight": mainImage.imagesize[]->height,
+      "mainImageWidth": mainImage.imagesize[]->width,
       publishedOn
     }`
-  )
-}
+  );
+};
 
 const getNews = async (slug: string): Promise<Page> => {
   return clientConfig.fetch(
@@ -50,8 +54,8 @@ const getNews = async (slug: string): Promise<Page> => {
       publishedOn
     }`,
     { slug: slug }
-  )
-}
+  );
+};
 
 const getPartners = async (): Promise<Partner[]> => {
   return clientConfig.fetch(
@@ -63,7 +67,7 @@ const getPartners = async (): Promise<Partner[]> => {
       "logoAltText": logo.altText,
       url,
     }`
-  )
-}
+  );
+};
 
-export { getPage, getNews, getNewsItems, getPartners }
+export { getPage, getNews, getNewsItems, getPartners };
