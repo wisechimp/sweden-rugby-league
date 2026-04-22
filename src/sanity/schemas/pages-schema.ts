@@ -28,12 +28,6 @@ const page = {
           title: "Alt Text",
           type: "string",
         },
-        {
-          name: "imagesize",
-          title: "Image Size",
-          type: "array",
-          of: [{ type: "reference", to: { type: "imagesize" } }],
-        },
       ],
     },
     {
@@ -47,6 +41,6 @@ const page = {
       ],
     },
   ],
-}
+};
 
-export default page
+export default page;

@@ -6,7 +6,7 @@ const news = {
     {
       name: "title",
       title: "Title",
-      type: "string"
+      type: "string",
     },
     {
       name: "slug",
@@ -14,8 +14,8 @@ const news = {
       type: "slug",
       options: {
         source: "title",
-        maxLength: 96
-      }
+        maxLength: 96,
+      },
     },
     {
       name: "mainImage",
@@ -28,32 +28,28 @@ const news = {
           title: "Alt Text",
           type: "string",
         },
-        {
-          name: "imagesize",
-          title: "Image Size",
-          type: "array",
-          of: [{type: 'reference', to: {type: 'imagesize'}}]
-        }
       ],
     },
     {
-      name: 'publishedOn',
-      title: 'Published on',
-      type: 'date',
+      name: "publishedOn",
+      title: "Published on",
+      type: "date",
       options: {
-        dateFormat: 'DD-MM-YYYY',
-        calendarTodayLabel: 'Today'
-      }
+        dateFormat: "DD-MM-YYYY",
+        calendarTodayLabel: "Today",
+      },
     },
     {
-      name: 'content',
-      title: 'Content',
-      type: 'array',
-      of: [{
-        type: 'block'
-      }]
-    }
-  ]
-}
+      name: "content",
+      title: "Content",
+      type: "array",
+      of: [
+        {
+          type: "block",
+        },
+      ],
+    },
+  ],
+};
 
-export default news
+export default news;

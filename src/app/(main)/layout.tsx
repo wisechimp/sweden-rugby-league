@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import { SanityLive } from "@/sanity/lib/live";
 import "@/styles/global.css";
 
 type MainLayoutProps = {
@@ -17,6 +18,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             <Header />
             {children}
             <Footer />
+            <SanityLive />
           </main>
         </div>
       </body>

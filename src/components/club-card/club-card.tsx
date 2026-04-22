@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import ClubData from "@/types/ClubData";
 
-import clubcardStyles from "./clubcard.module.css";
+import clubcardStyles from "./club-card.module.css";
 
 type ClubCardPropsType = {
   data: ClubData;
