@@ -36,7 +36,7 @@ const NewsCard = ({ newsData }: NewsCardProps) => {
         height={Math.round(mainImageHeight / aspectRatio)}
       />
       <div className="linkButt">
-        <Link href={slug} target="_blank" rel="noopener noreferrer">
+        <Link href={slug} rel="noopener noreferrer">
           Read More...
         </Link>
       </div>
