@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import { UmamiAnalytics } from "@/components/third-party-services/umami-analytics";
 import { SanityLive } from "@/sanity/lib/live";
 import "@/styles/global.css";
 
@@ -19,6 +20,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
             {children}
             <Footer />
             <SanityLive />
+            <UmamiAnalytics />
           </main>
         </div>
       </body>
