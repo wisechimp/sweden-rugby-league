@@ -34,7 +34,7 @@ const HomePage = async () => {
         <p>
           Sweden Rugby League was founded in 2009 with the aim to introduce and
           grow the sport of <Link href="/rugby-league">rugby league</Link> in
-          Sweden. They were admitted to the{" "}
+          Sweden. We were admitted to the{" "}
           <Link
             href="https://europeanrugbyleague.com/"
             target="_blank"
@@ -42,7 +42,7 @@ const HomePage = async () => {
           >
             European Rugby League
           </Link>{" "}
-          in 2011 as Observer members. They oversee the{" "}
+          in 2011 as Observer members. We oversee the{" "}
           <Link href="/clubs">national competition</Link> in Sweden and the
           national team who were{" "}
           <Link
