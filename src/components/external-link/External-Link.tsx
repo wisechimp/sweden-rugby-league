@@ -11,13 +11,15 @@ const ExternalLink = ({
   umamiEventLabel,
   externalLinkText,
 }: ExternalLinkProps) => {
-  <Link
-    href={externalUrl}
-    data-umami-event={umamiEventLabel}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    {externalLinkText}
-  </Link>;
+  return (
+    <Link
+      href={externalUrl}
+      data-umami-event={umamiEventLabel}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {externalLinkText}
+    </Link>
+  );
 };
 export default ExternalLink;
