@@ -1,7 +1,7 @@
 :root {
-  --primary-dark: darkblue;
+  --primary-dark: #09065A;
   --primary-contrast: lightsteelblue;
   --primary-light: white;
   --primary-away: yellow;
-  --action-bar-height: 66px;
+  --header-height: 66px;
 }

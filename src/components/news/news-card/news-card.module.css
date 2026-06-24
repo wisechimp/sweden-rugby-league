@@ -1,0 +1,13 @@
+.cardStructure {
+    margin: 1em;
+    max-width: 350px;
+}
+
+.cardStructure :is(img) {
+    display: block;
+    margin: auto;
+}
+
+.cardStructure :is(a) {
+    margin-top: 1em;
+}

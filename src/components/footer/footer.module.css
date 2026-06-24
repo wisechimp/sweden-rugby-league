@@ -1,0 +1,96 @@
+.footerContainer {
+  background-color: var(--primary-contrast);
+  padding: 1em 0; 
+  width: 100%
+}
+
+.footerContainer :is(h2) {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 1em;
+}
+
+.footerLink :is(a) {
+  color: var(--primary-light);
+  font-weight: 700;
+}
+
+.footerPartnersContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.footerPartnersContainer :is(img){
+  object-fit: scale-down;
+}
+
+.footerYourName {
+  background-color: var(--primary-dark);
+  border: 2px solid var(--primary-contrast);
+  color: var(--primary-light);
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+.footerYourName :is(p) {
+  margin-block: 0.5em 0 0 0;
+}
+
+.footerMenus {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%
+}
+.footerMenus :is(a) {
+  text-decoration: none;
+}
+
+.footerSubMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSubMenu :is(p) {
+  color: var(--primary-dark);
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
+.footerSubMenuItem {
+  display: flex;
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+
+.footerSubMenuItem :is(a) {
+  font-size: medium;
+}
+
+.footerSubMenuItem :is(img) {
+  padding: 0 0.5em;
+}
+
+@media (max-width: 512px) {
+  .footerMenus {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .footerSubMenu {
+    padding: 0 1em;
+  }
+}
+
+@media (max-width: 320px) {
+  .footerMenus {
+    justify-content: start;
+  }
+}
