@@ -4,26 +4,23 @@ import { fetchClubs } from "@/actions";
 import Clubcard from "@/components/club-card/club-card";
 import ExternalLink from "@/components/external-link/External-Link";
 import Jumbtron from "@/components/jumbotron/Jumbotron";
-import NewsCard from "@/components/news/news-card";
 import norwayCharge from "@/images/norwaycharge.jpg";
-import { sanityFetch } from "@/sanity/lib/live";
-import { getNewsItems } from "@/sanity/lib/queries";
 
 const HomePage = async () => {
   const clubData = await fetchClubs();
-  const { data: latestNews } = await sanityFetch({
+  /* const { data: latestNews } = await sanityFetch({
     query: getNewsItems,
   });
 
-  console.log(latestNews);
+  console.log(latestNews); */
 
-  const renderedNews = latestNews.map((news) => {
+  /* const renderedNews = latestNews.map((news) => {
     if (latestNews.length === 0) {
       return;
     } else {
       return <NewsCard key={news._id} newsData={news} />;
     }
-  });
+  }); */
 
   return (
     <div>
@@ -53,7 +50,7 @@ const HomePage = async () => {
         </p>
       </div>
       <h2>Latest News</h2>
-      <div className="flexCards">{renderedNews}</div>
+      {/* <div className="flexCards">{renderedNews}</div> */}
       <h2>Our Clubs</h2>
       <div className="flexCards">
         {clubData.map((club) => {

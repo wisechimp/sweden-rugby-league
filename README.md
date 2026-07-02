@@ -1,1 +1,1 @@
-Sweden Rugby League's website is built with Nextjs and utilises Sanity for Content Management.
+Sweden Rugby League's website is built with Nextjs and utilises Mdx for Content Management.

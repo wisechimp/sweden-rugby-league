@@ -1,19 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
-
-import { getPartners } from "@/sanity/sanity-utils";
 
 import FooterSocialMediaLinks from "./footer-social-links";
 import FooterSubMenu from "./footer-sub-menu";
 import * as styles from "./footer.module.css";
 
 const Footer = async () => {
-  const partnersData = await getPartners();
+  // const partnersData = await getPartners();
 
   return (
     <div className={styles.footerContainer}>
       <h2>We are grateful to our partners for their support:</h2>
-      <div className={styles.footerPartnersContainer}>
+      {/* <div className={styles.footerPartnersContainer}>
         {partnersData.map((partner) => (
           <div key={partner._id}>
             <Link href={partner.url}>
@@ -26,7 +23,7 @@ const Footer = async () => {
             </Link>
           </div>
         ))}
-      </div>
+      </div> */}
       <div className={styles.footerYourName}>
         <p>
           <strong>Your Logo Here!</strong>

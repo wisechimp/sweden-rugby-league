@@ -1,12 +1,11 @@
 type NewsItem = {
   _id: string;
-  _createdAt: string;
+  publishedAt: string;
   title: string;
   slug: string;
-  mainImage: SanityImage;
-  mainImageAltText: string;
-  mainImageHeight: number;
-  mainImageWidth: number;
+  imageSrc: string;
+  imageAltText: string;
+  author: string;
 };
 
 export default NewsItem;
